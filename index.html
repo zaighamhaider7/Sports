@@ -12,13 +12,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- jquery js link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <!-- AOS animation javascript link -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body class="bg" data-bs-theme="dark">
-  <!-- navbar starts from here -->
+  <!-- webnav -->
   <nav class="navbar navbar-expand-lg " id="nav">
     <div id="logo"></div>
     <div id="outerham">
@@ -36,12 +37,10 @@
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="football.html">Football</a></li>
           <li><a class="dropdown-item" href="hockey.html">Hockey</a></li>
-          <li><a class="dropdown-item" href="tennis.html">Tennis</a></li>
           <li><a class="dropdown-item" href="basketball.html">Basket-Ball</a></li>
           <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
           <li><a class="dropdown-item" href="badminton.html">Badmanton</a></li>
           <li><a class="dropdown-item" href="motercycle.html">Motorcycle Racing</a></li>
-          <li><a class="dropdown-item" href="vollyball.html">Vollyball</a></li>
           <li><a class="dropdown-item" href="golf.html">Golf</a></li>
           <li><a class="dropdown-item" href="chess.html">Chess</a></li>
           <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
@@ -52,7 +51,8 @@
 
     </ul>
   </nav>
-  <!-- responsive menu -->
+
+  <!-- resp navbar -->
   <div id="resp" class="resp">
     <ul id="resp-ul1">
       <li><a href="index.html">Home</a></li>
@@ -61,14 +61,12 @@
           Sports
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="footbal.html">Football</a></li>
+          <li><a class="dropdown-item" href="football.html">Football</a></li>
           <li><a class="dropdown-item" href="hockey.html">Hockey</a></li>
-          <li><a class="dropdown-item" href="tennis.html">Tennis</a></li>
           <li><a class="dropdown-item" href="basketball.html">Basket-Ball</a></li>
           <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
-          <li><a class="dropdown-item" href="bedminton.html">Bedmanton</a></li>
+          <li><a class="dropdown-item" href="badminton.html">Badmanton</a></li>
           <li><a class="dropdown-item" href="motercycle.html">Motorcycle Racing</a></li>
-          <li><a class="dropdown-item" href="vollyball.html">Vollyball</a></li>
           <li><a class="dropdown-item" href="golf.html">Golf</a></li>
           <li><a class="dropdown-item" href="chess.html">Chess</a></li>
           <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
@@ -79,17 +77,17 @@
 
     </ul>
   </div>
-  <!-- responsive menu ending -->
-  <!-- navbar ends here -->
-  <!-- first section starts here -->
+
+  <!-- Hero-section section  -->
   <section id="hero">
     <h1 class="h1-responsive">SportsInfo:</h1>
-    <h2 style="color: white ;"><span id="spanone">"Unveiling</span> <span id="spantwo">the Essence</span> <span id="spanthree">of Athletic Mastery"</span>
+    <h2 style="color: white ;"><span id="spanone">"Unveiling</span> <span id="spantwo">the Essence</span> <span
+        id="spanthree">of Athletic Mastery"</span>
     </h2>
     <div id="overlay"></div>
   </section>
-  <!-- first section ends here -->
-  <!-- second section -->
+
+  <!-- Grid section -->
   <section id="second-section">
     <h2 style="text-shadow: 0px 0px 8px 2px #ff9800; text-size-adjust: 2em;">Sports</h2>
     <div class="input-group  mb-3">
@@ -101,12 +99,14 @@
       <div class="row mt-5 mb-3  ">
         <div class="col mt-3 col-lg-4  col-sm-12  prodItems basketballtopplayer">
           <div class="cardprod" id="cardprod1">
-            <div class="overlay-grid"  >
+            <div class="overlay-grid">
               <h3 class="cardcontent">Basket-Ball</h3>
-              <p class="cardcontent">Basketball is a dynamic team sport played between two teams of five players each. The objective is to
+              <p class="cardcontent">Basketball is a dynamic team sport played between two teams of five players each.
+                The objective is to
                 score points by shooting a ball through the opponent's hoop. Fast-paced and requiring a mix of skill and
                 teamwork, basketball is a globally popular sport.</p>
-              <a href="basketball.html" class="cardcontent"> <button class="btn" id="button-addon2">View More</button></a>
+              <a href="basketball.html" class="cardcontent"> <button class="btn" id="button-addon2">View
+                  More</button></a>
 
             </div>
           </div>
@@ -145,8 +145,8 @@
               <p>Hockey is a dynamic team sport where two teams compete to score goals by hitting a puck or ball into
                 the opponent's net with a stick. Whether played on ice or a field, hockey highlights speed, skill, and
                 teamwork, making it a globally beloved sport.</p>
-             <a href="hockey.html"> <button class="btn" id="button-addon2">View More</button>
-             </a>
+              <a href="hockey.html"> <button class="btn" id="button-addon2">View More</button>
+              </a>
             </div>
           </div>
         </div>
@@ -157,7 +157,7 @@
               <p>Tennis is a racquet sport played individually or in pairs, aiming to score points by hitting a ball
                 over a net into the opponent's court. Known for its fast-paced nature and strategic gameplay, tennis is
                 played on various surfaces and enjoyed worldwide as both a recreational and competitive sport.</p>
-             <a href="tennis.html"> <button class="btn" id="button-addon2">View More</button></a>
+              <a href="tennis.html"> <button class="btn" id="button-addon2">View More</button></a>
 
             </div>
           </div>
@@ -171,7 +171,7 @@
                 net, aiming to make it land in the opponent's side. Known for its quick rallies and agility, badminton
                 is played indoors or outdoors, and it's a popular recreational and competitive sport globally.</p>
               <a href="badminton.html">
-              <button class="btn" id="button-addon2">View More</button>
+                <button class="btn" id="button-addon2">View More</button>
 
               </a>
             </div>
@@ -188,10 +188,10 @@
                 <p>Motorcycle racing is a high-speed sport where riders compete on specialized bikes in events like road
                   racing and motocross. Known for its thrilling speed and skillful maneuvers, motorcycle racing attracts
                   enthusiasts globally, from local races to prestigious international competitions like MotoGP.</p>
-<a href="motercycle.html">
-  <button class="btn" id="button-addon2">View More</button>
+                <a href="motercycle.html">
+                  <button class="btn" id="button-addon2">View More</button>
 
-</a>
+                </a>
               </div>
             </div>
           </div>
@@ -203,10 +203,10 @@
                   over the net and into the opponent's court. It requires quick reflexes, teamwork, and strategic play.
                   Popular in both recreational and competitive settings, volleyball is played globally, including beach
                   volleyball as a popular variant.</p>
-<a href="vollyball.html">
-  <button class="btn" id="button-addon2">View More</button>
+                <a href="vollyball.html">
+                  <button class="btn" id="button-addon2">View More</button>
 
-</a>
+                </a>
               </div>
             </div>
           </div>
@@ -217,10 +217,10 @@
                 <p>Golf is a precision sport played on a course where players aim to hit a ball into holes with as few
                   strokes as possible. It emphasizes individual skill and strategy, and it is enjoyed globally as both a
                   recreational and competitive pursuit.</p>
-<a href="golf.html">
-  <button class="btn" id="button-addon2">View More</button>
+                <a href="golf.html">
+                  <button class="btn" id="button-addon2">View More</button>
 
-</a>
+                </a>
               </div>
             </div>
           </div>
@@ -233,10 +233,10 @@
                 <p>Chess is a classic board game played between two players on an 8x8 grid. The goal is to checkmate the
                   opponent's king. Known for its strategic depth, chess is played globally, combining skill and
                   foresight in a timeless and enduring game.</p>
-<a href="chess.html">
-  <button class="btn" id="button-addon2">View More</button>
+                <a href="chess.html">
+                  <button class="btn" id="button-addon2">View More</button>
 
-</a>
+                </a>
               </div>
             </div>
           </div>
@@ -248,10 +248,10 @@
                   both a competitive activity, with races in various styles, and a popular recreational pursuit for
                   fitness. Swimmers may compete in pools or open water, and the sport enjoys global participation,
                   highlighted in major events like the Olympics.</p>
-<a href="swimming.html">
-  <button class="btn" id="button-addon2">View More</button>
+                <a href="swimming.html">
+                  <button class="btn" id="button-addon2">View More</button>
 
-</a>
+                </a>
               </div>
             </div>
           </div>
@@ -267,8 +267,8 @@
     </div>
 
   </section>
-  <!-- second section ends-->
-  <!-- about us -->
+ 
+  <!-- about us section-->
   <section id="aboutus">
     <h2 style="text-align: center; font-size: 3rem; font-weight: bold;">
       <Span style="color: #ff9800; margin-right: 0.2em;">About</Span><span style="color: #e7e7e7;">Us</span>
@@ -287,7 +287,8 @@
         </p>
       </div>
       <div class="aboutimg">
-        <img src="./asset/pexels-thiago-kai-9381737.jpg" class="intro img-fluid" alt="aboutimg" height="300px" width="400px">
+        <img src="./asset/pexels-thiago-kai-9381737.jpg" class="intro img-fluid" alt="aboutimg" height="300px"
+          width="400px">
       </div>
     </div>
     <div class="aboutouter d-lg-flex justify-content-lg-evenly align-items-lg-center mt-5">
@@ -306,7 +307,8 @@
         </p>
       </div>
       <div class="aboutimg">
-        <img src="./asset/pexels-wallace-chuck-2834917.jpg" class="intro img-fluid" alt="aboutimg" height="300px" width="400px">
+        <img src="./asset/pexels-wallace-chuck-2834917.jpg" class="intro img-fluid" alt="aboutimg" height="300px"
+          width="400px">
       </div>
 
     </div>
@@ -326,123 +328,79 @@
         </p>
       </div>
       <div class="aboutimg">
-        <img src="./asset/mission.jpg" class="intro img-fluid" alt="aboutimg" height="300px" width="400px">
+        <img src="./asset/mission.jpg" class="intro img-fluid mb-5" alt="aboutimg" height="300px" width="400px">
       </div>
     </div>
     </div>
   </section>
- <section id="contact">
-  <h2>Contact Us</h2>
 
-  <form action="https://formsubmit.co/ferozsameer07@gmail.com" method="POST">
-    <label for="name">Enter Your Name...</label>
-    <input type="text" name="name" required>
-    <label for="email">Enter Your Email Address</label>
-    <input type="email" name="email" required>
-    <label for="email">Enter Your Message</label>
-    <input type="text" name="message" required>
-    <button type="submit">Send</button>
-</form>
- </section>
+  <!-- contact section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+
+    <form action="https://formsubmit.co/ferozsameer07@gmail.com" method="POST">
+      <label for="name">Enter Your Name...</label>
+      <input type="text" name="name" required>
+      <label for="email">Enter Your Email Address</label>
+      <input type="email" name="email" required>
+      <label for="email">Enter Your Message</label>
+      <input type="text" name="message" required>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
   <!-- cursor -->
   <div id="cursor"></div>
-  <!-- cursor -->
-  <!-- footer area -->
+
+<!-- footer section -->
   <footer>
     <table>
       <tr>
-        <a href="badminton.html"><th>Badminton</th></a>
-        <a href="basketball.html"><th>Basket Ball </th></a>
-        <a href="chess.html"><th>Chess</th></a>
+        <a href="badminton.html">
+          <th>Badminton</th>
+        </a>
+        <a href="basketball.html">
+          <th>Basket Ball </th>
+        </a>
+        <a href="chess.html">
+          <th>Chess</th>
+        </a>
       </tr>
       <tr>
-        <a href="cricket.html"><th>Cricket</th></a>
-        <a href="football.html"><th>FootBall </th></a>
-        <a href="golf.html"><th>Golf</th></a>
+        <a href="cricket.html">
+          <th>Cricket</th>
+        </a>
+        <a href="football.html">
+          <th>FootBall </th>
+        </a>
+        <a href="golf.html">
+          <th>Golf</th>
+        </a>
       </tr>
       <tr>
-        <a href="hockey.html"><th>Hockey</th></a>
-        <a href="motercycle.html"><th>Motorcycle Racing </th></a>
-        <a href="swimming.html"><th>Swimming</th></a>
+        <a href="hockey.html">
+          <th>Hockey</th>
+        </a>
+        <a href="motercycle.html">
+          <th>Motorcycle Racing </th>
+        </a>
+        <a href="swimming.html">
+          <th>Swimming</th>
+        </a>
       </tr>
       <tr>
-        <a href="tennis.html"><th>Tennis</th></a>
-        <a href="vollyball.html"><th>Volley Ball </th></a>
+        <a href="tennis.html">
+          <th>Tennis</th>
+        </a>
+        <a href="vollyball.html">
+          <th>Volley Ball </th>
+        </a>
       </tr>
     </table>
   </footer>
-  <!-- scripts of javascript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="main.js"></script>
-  <script>
 
-
-
-
-
-
-
+  <script> 
     // navbar
-    window.addEventListener('scroll', () => {
-      const verticalScrollpx = window.scrollY || window.pageYOffset;
-      const navbar = document.getElementById('nav')
-      const home = document.getElementById('home')
-      const sports = document.getElementById('sports')
-      const aboutus = document.getElementById('about')
-      const cardprod = document.getElementsByClassName('cardprod')
-      const viewmorebtn = document.getElementsByClassName('view-more')
-
-      if (verticalScrollpx < 500) {
-        navbar.style.backgroundColor = "";
-        navbar.style.backdropFilter = "none";
-        navbar.style.border = "none";
-        home.style.fontSize = "large"
-        home.style.fontWeight = "bold"
-        sports.style.fontSize = "medium"
-        sports.style.fontWeight = '400'
-        aboutus.style.fontSize = "medium"
-        aboutus.style.fontWeight = "400"
-        navbar.style.opacity = "1";
-
-      }
-      else if (verticalScrollpx < 1600 && verticalScrollpx > 500) {
-        // if(cardprod.length <7 ){
-        navbar.style.backgroundColor = "black";
-        navbar.style.opacity = "0.8";
-        home.style.fontSize = "medium"
-        home.style.fontWeight = '400'
-        sports.style.fontSize = "large"
-        sports.style.fontWeight = "bold"
-        aboutus.style.fontSize = "medium"
-        aboutus.style.fontWeight = "400"
-        navbar.style.boxShadow = "none";
-        navbar.style.backdropFilter = "blur( 20px )";
-        navbar.style.borderRadius = "10px";
-        navbar.style.border = "1px solid rgba( 255, 255, 255, 0.18 )"
-        // }
-      }
-      // else if(cardprod.length >=11){}
-      else if (verticalScrollpx < 2000 && verticalScrollpx > 1600) {
-        navbar.style.backgroundColor = "black";
-        navbar.style.opacity = "0.8";
-        home.style.fontSize = "medium"
-        home.style.fontWeight = '400'
-        sports.style.fontSize = "medium"
-        sports.style.fontWeight = "400"
-        navbar.style.boxShadow = "none";
-        aboutus.style.fontSize = "large"
-        aboutus.style.fontWeight = "bold"
-        navbar.style.backdropFilter = "blur( 20px )";
-        navbar.style.borderRadius = "10px";
-        navbar.style.border = "1px solid rgba( 255, 255, 255, 0.18 )";
-
-      }
-    });
-    // navbar
-
     $(document).ready(function () {
       $(document).mousemove(function (e) {
         $('#cursor').offset({
@@ -450,75 +408,26 @@
           left: e.pageX + 10
         })
       }),
-      $('#outerham').click(function () {
-        $('#resp').slideToggle()
-        $('.rotate').toggleClass('hamrotate')
-        $('.innerham-inv').slideToggle()
-      }),
-      // grid buttons validation start
+        $('#outerham').click(function () {
+          $('#resp').slideToggle()
+          $('.rotate').toggleClass('hamrotate')
+          $('.innerham-inv').slideToggle()
+        }),
+        // grid buttons validation start
 
-      $('.view-more').click(function () {
-        $('#more-grids').show()
-        $(this).hide()
-      })
+        $('.view-more').click(function () {
+          $('#more-grids').show()
+          $(this).hide()
+        })
       $('.view-less').click(function () {
         $('#more-grids').hide()
         $('.view-more').show()
       })
-      // grid button validations end
-      // script.js
- 
-// To access the stars
-let stars = 
-    document.getElementsByClassName("star");
-let output = 
-    document.getElementById("output");
- 
-// Funtion to update rating
-function gfg(n) {
-    remove();
-    for (let i = 0; i < n; i++) {
-        if (n == 1) cls = "one";
-        else if (n == 2) cls = "two";
-        else if (n == 3) cls = "three";
-        else if (n == 4) cls = "four";
-        stars[i].className = "star " + cls;
-    }
-   
-}
- 
-// To remove the pre-applied styling
-function remove() {
-    let i = 0;
-    while (i < 4) {
-        stars[i].className = "star";
-        i++;
-    }
-}
     })
-
   </script>
 
-  <script>
-    function search() {
-      const searchbox = document.getElementById('search-item').value.toLowerCase();
-      const storeitems = document.getElementById("product");
-      const products = document.querySelectorAll('.prodItems');
-      const pname = storeitems.getElementsByTagName('h3');
-
-      for (let i = 0; i < pname.length; i++) {
-        let match = products[i].getElementsByTagName('h3')[0];
-        if (match) {
-          let textValue = match.textContent || match.innerHTML;
-          if (textValue.toLowerCase().indexOf(searchbox) > -1) {
-            products[i].style.display = "";
-          } else {
-            products[i].style.display = "none";
-          }
-        }
-      }
-    };
-  </script>
+<script src="main.js"></script>
+  
 </body>
 
 </html>
