@@ -1,0 +1,575 @@
+body{
+    overflow-x: hidden !important;
+
+  }
+  #first{
+      display: flex;
+      background-image: url(./pexels-cottonbro-studio-7337605.jpg);
+      background-size: cover;
+      flex-direction: column;
+      justify-content: center;
+
+      position: relative;
+      margin: 0% auto;
+      padding: 4% 0%;
+      align-items: center;
+  }
+  #overlay{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    filter: blur(4px) !important;
+
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    opacity: 0.6;
+  }
+  h1{
+    font-weight: bold;
+    font-size: larger;
+  }
+  h1,h2,p > #first{
+    position: relative;
+    z-index: 4 !important;
+  }
+  h2{
+    font-weight: bold;
+  }
+
+  #detail{
+      height:max-content;
+      /* background-color: gray; */
+      width: 80%;
+      display: flex;
+      color: white;
+      position: relative;
+      z-index: 3;
+      flex-direction: column;
+      justify-content: center;
+      
+  }
+  span{
+      color: #ff9800;
+  }
+  .btn-change{
+    color: white !important;
+    background-color: #ff8900 !important;
+    border: none;
+    box-shadow: none;
+    border-radius: 9px;
+    height: 2em;
+    width: 7em;
+  }
+  .btn-change:hover{
+    background-color: #ff8800b1 !important;
+  }
+  #second{
+      display: flex;
+      border-top: 0.4em solid gray;
+      width: 100% !important;
+      position: relative;
+      height: fit-content;
+      flex-direction: column;
+      justify-content: center;
+  }
+  #second h2{
+      font-size: 3rem;
+      align-items: center;
+      text-align: center;
+      margin: 0% auto;
+      margin-bottom: 1em;
+      margin-top: 0.5em;
+  }
+  /* Add this CSS to your stylesheet */
+  /* Override Bootstrap styles for accordion button focus and active state */
+/* Override Bootstrap styles for accordion button focus and active state */
+.btn:focus,
+.btn:active,
+.btn:not(.collapsed) {
+background-color: transparent;
+box-shadow: none;
+color: #000; /* Set the desired text color when focused, active, or open */
+}
+#acordianouter{
+/* margin: 0% auto; */
+padding: 2% 4%;
+align-items: center;
+align-content: center;
+border-bottom: 0.4em solid gray;
+}
+#cursor{
+width: 1em;
+height: 1em;
+position: relative;
+z-index: 99999;
+background-color: #ff9800;
+border-radius: 45px;
+}
+/* cursor mover */
+/* custom scrollbar */
+/* width */
+::-webkit-scrollbar {
+width: 5px;
+transition: 0.5s;
+}
+::-webkit-scrollbar:hover {
+width: 9px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+background: inherit;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #ff8900;
+border-radius: 45px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #ff8800b3;
+}
+/* custom scrollbar */
+.query{
+background-color: transparent !important;
+color: white !important;
+}
+.query:focus{
+box-shadow: none !important;
+}
+#logo{
+    background-image: url(./asset/Sportsinfo\ 12-01\ \(1\).png);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 11em !important;
+    height: 5em !important;
+}
+/* hamburger menu start */
+#outerham{
+    width: 3em;
+    height: 2.5em;
+    justify-content: center;
+    background-color: #ff9800;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+.innerham{
+    width: 2em;
+    border-radius: 45px;
+    align-items: center;
+    background-color: white;
+    margin: 0.2em;
+    height: 0.2em;
+}
+/* hamburger menu end */
+/* responsvie menu start */
+.resp{
+    background-color:black;
+    opacity: 0.8;
+    width: 100% !important;
+    position: fixed;
+    top: 0% !important;
+    bottom: 0%;
+    right: 0% !important;
+    cursor: pointer;
+    text-align: center;
+    padding: 0% 0% !important;
+    margin: 0% !important; 
+    border-radius: 9px;
+    align-items: center;
+    display: none;
+    z-index: 3;
+    align-content: center;
+    margin: 0% auto;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh ;
+}
+#resp-ul1{
+    display: flex;
+    padding: 0% 0% !important;
+    height: 100%;
+    width: fit-content;
+    /* background-color: #ff8900; */
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-content: center !important;
+    align-items: center !important;
+    margin: 0% auto !important;
+    text-align: center !important;
+    align-self: center !important;
+}
+#resp li{
+    margin-top: 2em;
+    margin-left: 0% !important;
+    list-style: none;
+    font-size: larger;
+    align-items: center;
+    /* background-color: aqua; */
+    align-self: center;
+    text-align: center;
+    width:max-content !important;
+}
+.dropdown-menu{
+    background-color: #000000 !important;
+}
+/* responsvie menu end */
+/* navbar */
+nav{
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    align-items: center !important;
+    position: fixed !important;
+    z-index: 5;
+    /* background-color: rgba(0, 0, 0, 0.616);
+    opacity:"0.8";            
+    box-shadow:"none";  
+    filter : "blur( 20px )";
+    border-radius:"10px";
+    border :1px solid rgba(255, 255, 255, 0.418); */
+    /* background: rgba( 0, 0, 0, 0.3 ); */
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+    padding: 1% 7% !important;
+}
+nav ul{
+    display: flex;
+
+}
+
+nav li{
+    list-style: none !important;
+    text-decoration: none !important;
+    margin-left: 1em !important;
+    color: white !important;
+    border: none !important;
+}
+li{
+    list-style: none !important;
+
+}
+a:hover{
+    color: #ff9800 !important ;
+}
+a{
+    list-style: none !important;
+    text-decoration: none !important;
+    color: white !important;
+}
+/* navbar */
+
+.outermodal{
+    margin: 0% auto;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color:orange; */
+    width: 100%;
+    z-index: 11;
+    height: 100vh;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    top: -500%;
+    /* transition:0.5s ease; */
+    text-align:  center;
+}
+#blurdiv{
+    position: fixed;
+    top:0;
+    left: 0;
+    display: none;
+    z-index: 10;
+    background-color: #000000b3;
+    filter: blur(1000px);
+    width: 100%;
+    height: 100%;
+}
+.modal{
+    height: max-content;
+    position: relative;
+    /* display: none; */
+    /* position: absolute;
+    bottom: 0%;
+     top: 50%; */
+    width: 70%; 
+    box-shadow: 0px 0px 9px 5px rgb(44, 44, 44) ;
+    z-index: 11;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.95;
+    display: flex;
+    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align:  center;
+     margin: 0% auto;
+}
+.innermodal{
+    width: 35%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0% auto;
+}
+
+.basketballtopplayer{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:1024px) {
+    #cursor{
+        display: none;
+    }
+    #top-player{
+        width: 100vw !important;
+        align-items: center !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center !important;
+         text-align:  center !important;
+         margin: 0% auto !important;
+    }
+    .outermodal{
+        width: 100%;
+        overflow-y: visible;
+        height: 100% !important;
+        
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+        align-items: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        margin: 0% auto !important;
+        align-content: center !important;  
+        padding:0% 10% !important;
+    }
+    .innermodal{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: max-content;
+        padding: 0% 2%;
+    }
+    .innermodal img{
+        width: 100%;
+        height: auto;
+    }
+    .innermodal h2{
+        margin-top: 6em !important;
+        position: relative;
+        z-index: 999;
+    }
+
+    .modal{
+        flex-direction: column;
+        height:45em !important;
+        overflow-y: visible;
+        padding: 20% 2% !important;
+        top: 0%;
+        margin: 0%;
+        opacity: 0.98 !important;
+        width: 60vw;
+        transition: 0.5s ;
+        position: fixed;
+    }
+    .modal h2{
+        font-size: 1rem;
+        margin: 0px 0px 0px ;
+    }
+}
+
+@media (max-width:980px) {
+    #outerham{
+        display: flex;
+        position: relative;
+        z-index: 999;
+    }
+    #cursor{
+        display: none;
+    }
+    nav ul{
+        display: none;
+    }
+    #resp{
+        display: none;
+        transition: right 0.5s ease;
+        top: 9%;
+        right: 1%;
+        padding: 15% 0%;
+        
+    }
+    .outermodal{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+        padding: 0%;
+    }
+    .innermodal{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: fit-content;
+        padding: 0% 2%;
+    }
+    .innermodal img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal{
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        overflow-y:visible;
+        position: fixed;
+    }
+    #top-player{
+        width: 100vw !important;
+
+}
+#first{
+    display: flex;
+    background-image: url(./asset/pexels-andrea-piacquadio-3764203.jpg);
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: 0% auto;
+    padding: 20% 0%;
+    align-items: center;
+}
+}
+@media (max-width:360px) {
+    nav {
+        padding: 1% 5% !important;
+        width: 100% !important;
+        margin: 0%;
+
+    }
+    #resp{
+        display: none;
+        transition: right 0.5s ease;
+        top: 0%;
+        right: 0%;
+        width: 100% !important;
+        text-align: center;
+        border-radius: 9px;
+        align-items: center;
+        display: none;
+        z-index: 4;
+        align-content: center;
+        margin: 0% auto;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        padding: 25% 40% !important;
+        
+    }
+    .dropdown-menu{
+        background-color: #000000 !important;
+        overflow-y: scroll !important;
+        overflow-x: hidden !important;
+        height: 20em !important;
+    }
+    #resp-ul1{
+        display: flex;
+        padding: 0% 0% !important;
+        height: 100%;
+        width: fit-content;
+        /* background-color: #ff8900; */
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        align-self: center !important;
+    }
+    #resp li{
+        margin-top: 3em !important;
+        margin-left: 0% !important;
+        list-style: none;
+        margin: 0% auto;
+        font-size: larger;
+        align-items: center;
+        /* background-color: aqua; */
+        align-self: center;
+        text-align: center;
+        width:max-content !important;
+    }
+    body{
+        width: 100%;
+    }
+
+    #first{
+        padding: 25% 0% !important;
+            display: flex;
+            background-image: url(./asset/pexels-wallace-chuck-2834917.jpg);
+            background-size: cover;
+            flex-direction: column;
+            justify-content: center;
+      
+            position: relative;
+            margin: 0% auto;
+            padding: 8% 0%;
+            align-items: center;
+        
+      
+    }
+  
+    #logo{
+        width: 7.5em !important;
+        height: 3.5em !important;
+    }
+
+    #top-player{
+        width: 100vw !important;
+    }
+    .outermodal{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .innermodal{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: fit-content;
+        padding: 0% 2%;
+    }
+    .innermodal img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal{
+        flex-direction: column;
+        height: 100vh !important;
+        width: 100%;
+        /* overflow-y:hidden !important */
+        opacity: 0.9 !important;
+        position: fixed;
+    }
+    .card{
+        width: 10rem;
+    }
+    } 

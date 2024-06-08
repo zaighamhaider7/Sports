@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess | SportsInfo</title>
+    <link rel="shortcut icon" href="./asset/Sportsinfo 1-01 (1).png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="sports.css">
+    <style>
+      #first{
+        background-image: url(./asset/chess.jpg);
+      }
+    </style>
+</head>
+<body data-bs-theme="dark">
+  <div id="cursor"></div>
+  <nav class="navbar navbar-expand-lg " id="nav">
+   <a href="index.html">
+    <div id="logo"></div>
+   </a>
+    <div id="outerham">
+      <div class="innerham innerham-inv"></div>
+      <div class="innerham rotate"></div>
+      <div class="innerham innerham-inv"></div>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="font-weight: bold; font-size: large;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Sports
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="football.html">Football</a></li>
+          <li><a class="dropdown-item" href="hockey.html">Hockey</a></li>
+          <li><a class="dropdown-item" href="tennis.html">Tennis</a></li>
+          <li><a class="dropdown-item" href="basketball.html">Basket-Ball</a></li>
+          <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
+          <li><a class="dropdown-item" href="badminton.html">Badmanton</a></li>
+          <li><a class="dropdown-item" href="racing.html">Motorcycle Racing</a></li>
+          <li><a class="dropdown-item" href="vollyball.html">Vollyball</a></li>
+          <li><a class="dropdown-item" href="golf.html">Golf</a></li>
+          <li><a class="dropdown-item" href="chess.html">Chess</a></li>
+          <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">FeedBack</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+  <!-- responsive menu -->
+  <div id="resp" class="resp">
+    <li><a href="index.html">Home</a></li>
+    <li class="item dropdown">
+      <a class="nav-link dropdown-toggle align-items-center text-center mx-auto " href="#" role="button"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        Sports
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Football</a></li>
+        <li><a class="dropdown-item" href="#">Hockey</a></li>
+        <li><a class="dropdown-item" href="#">Tennis</a></li>
+        <li><a class="dropdown-item" href="#">Basket-Ball</a></li>
+        <li><a class="dropdown-item" href="#">Cricket</a></li>
+        <li><a class="dropdown-item" href="#">Badminton</a></li>
+        <li><a class="dropdown-item" href="#">Motorcycle Racing</a></li>
+        <li><a class="dropdown-item" href="#">Vollyball</a></li>
+        <li><a class="dropdown-item" href="#">Golf</a></li>
+        <li><a class="dropdown-item" href="#">Chess</a></li>
+        <li><a class="dropdown-item" href="#">Swimming</a></li>
+      </ul>
+    </li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">FeedBack</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </div>
+  <!-- responsive menu ending -->
+  <!-- navbar ends here -->
+    <section id="first">
+       <div id="detail"> 
+        <div><h1 style="margin: 0% auto; text-align:  center; margin-bottom: 1em;font-size: 5vmax;"><span>Chess</span></h1></div>
+        <ul>
+            <li>  
+            <h2 class="h2-responsive"> Strategy and Intellect</h2>
+            </li>
+            <p style="color: white;">Chess is a game of strategy and intellect, played on a square board divided into 64 squares of alternating colors. Each player commands an army of chess pieces, including pawns, knights, bishops, rooks, queens, and kings, with the objective of checkmating the opponent's king while protecting one's own. With its rich history and reputation as the "king's game," chess offers endless opportunities for strategic thinking, analysis, and mastery of the mind.</p>
+            <li>
+            <h2>Rules and Gameplay</h2>
+            </li>
+            <p>Chess follows a set of rules and gameplay principles that dictate the movement and interactions of the pieces on the board. Each piece has its own unique abilities and movement patterns, with the ultimate goal of capturing the opponent's pieces and controlling key squares on the board. The game ends when one player achieves checkmate, a position in which the opponent's king is under attack and cannot escape capture.</p>
+            <li>
+        <h2>Types of Chess Openings</h2>
+
+            </li>
+                <p>Chess openings are strategic sequences of moves employed by players to establish control over the center of the board, develop their pieces, and create opportunities for future attacks. Common chess openings include the Sicilian Defense, Ruy Lopez, Italian Game, French Defense, and King's Indian Defense, each with its own set of principles, variations, and tactical motifs.</p>
+        </ul>
+    </div>
+
+    </div>
+</div>
+<div id="overlay"></div>
+</section>
+<section id="second">
+         <div id="acordianouter">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed query" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  How does chess improve cognitive skills?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Chess is renowned for its ability to improve cognitive skills, including critical thinking, problem-solving, concentration, and memory. By engaging in complex strategic decisions and anticipating opponents' moves, chess players develop mental agility and analytical prowess that can be applied to various aspects of life, including academics, career, and personal development.
+               </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed query " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Essential Equipment for Chess
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Chess requires minimal equipment, including a standard chessboard and a set of chess pieces. The chessboard features 64 squares arranged in an 8x8 grid, with alternating colors of light and dark. Chess pieces consist of two sets, one for each player, typically made of wood or plastic and representing different ranks and types of military units.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed query" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Chess Notation and Recording Games
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Chess notation is a system used to record and analyze chess games, allowing players to review and study their moves and strategies. Commonly used notation systems include algebraic notation, descriptive notation, and portable game notation (PGN), each offering different formats for recording chess moves and annotations.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed query" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Chess Clocks and Time Control
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Chess clocks are used to enforce time control and ensure fair play in chess tournaments and competitive matches. Each player has a set amount of time to make their moves, with the clock ticking down as they deliberate their moves. Time control settings vary, ranging from traditional time controls with fixed time limits to rapid and blitz formats with shorter time increments.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed query" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Chess Variants and Special Rules
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Chess has numerous variants and special rules that add excitement and complexity to the game. Popular variants include blitz chess, bullet chess, Fischer Random Chess (Chess960), and bughouse chess, each introducing unique gameplay mechanics, time controls, and strategic challenges for players to explore and enjoy.
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+              
+          </div>
+          <div id="top-player" style="width: 100%; align-items: center; margin: 0% auto; align-content: center; height: fit-content; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+            <h2><span>Top Chess Players</span></h2>
+            <div class="container text-center">
+              <div class="row " >
+                <!-- Magnus Carlsen Card -->
+                <div class="col mt-3 col-lg-6  col-sm-12 basketballtopplayer" >
+                  <div class="card" style="width: 18rem;">
+                    <img src="./asset/chess 1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">
+                        <span>Magnus Carlsen</span>: Magnus Carlsen, known for his exceptional talent and strategic prowess, is one of the greatest chess players of all time. With numerous world championship titles and a dominating presence in the world of chess, Carlsen continues to inspire and amaze fans with his innovative play and deep understanding of the game.
+                      </p>
+                      <button type="button" class="btn-change" id="learnmore-lebron">
+                        Learn More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Garry Kasparov Card -->
+                <div class="col mt-3  col-lg-6 col-sm-12 basketballtopplayer" >
+                  <div class="card" style="width: 18rem; ">
+                    <img src="./asset/chess 2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">
+                        <span>Garry Kasparov</span>: Garry Kasparov, a chess legend and former world champion, is renowned for his aggressive playing style and deep understanding of the game. With a long list of achievements and contributions to chess theory, Kasparov has left an indelible mark on the world of chess and continues to be celebrated as one of the greatest players in history.
+                      </p>
+                      <button type="button" class="btn-change" id="learnmore-kevin">
+                        Learn More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="row mt-3">
+                <!-- Viswanathan Anand Card -->
+                <div class="col mt-3 col-lg-6  col-sm-12  basketballtopplayer">
+                  <div class="card" style="width: 18rem;">
+                    <img src="./asset/chess 3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">
+                        <span>Viswanathan Anand</span>: Viswanathan Anand, known as the "Tiger of Madras," is one of India's greatest chess players and a former world champion. With a dynamic playing style and numerous tournament victories, Anand has inspired generations of chess enthusiasts and remains a respected figure in the world of professional chess.
+                      </p>
+                      <button type="button" class="btn-change" id="learnmore-stephen">
+                        Learn More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Judit Polgar Card -->
+                <div class="col mt-3 col-lg-6  col-sm-12  basketballtopplayer">
+                  <div class="card" style="width: 18rem;">
+                    <img src="./asset/chess4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">
+                        <span>Judit Polgar</span>: Judit Polgar, known for her exceptional talent and groundbreaking achievements, is widely regarded as the greatest female chess player of all time. With victories over top male players and a distinguished career in professional chess, Polgar has shattered gender barriers and inspired generations of female chess players around the world.
+                      </p>
+                      <button type="button" class="btn-change" id="learnmore-kawhi">
+                        Learn More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- modal for the first grid -->
+           <div class="outermodal" id="outermodal1">
+            <div class="modal" id="first-modal">
+              <div class="innermodal">
+                <img src="./asset/chess 1.jpg" alt="Magnus Carlsen" width="450" height="480">
+                <h2>Magnus Carlsen</h2>
+              </div>
+              <div class="innermodal"> <button class="btn-change view-less">Cancel</button>
+                <p>Magnus Carlsen, born on November 30, 1990, is a Norwegian chess grandmaster and the current World Chess Champion. Known for his exceptional talent, strategic insight, and relentless determination, Carlsen has dominated the world of chess since his early teens. With numerous world championship titles and a remarkable rating performance, Carlsen continues to push the boundaries of the game and inspire chess enthusiasts worldwide.</p>
+          </div>
+            </div>
+            </div>
+            <!-- modal for the second grid -->
+            <div class="outermodal" id="outermodal2">
+              <div class="modal" id="first-modal">
+                <div class="innermodal">
+                  <img src="./asset/chess 2.jpg" alt="Garry Kasparov" width="450" height="480">
+                  <h2>Garry Kasparov</h2>
+                </div>
+                <div class="innermodal"> <button class="btn-change view-less">Cancel</button>
+                  <p>Garry Kasparov, born on April 13, 1963, is a Russian chess grandmaster, former World Chess Champion, writer, and political activist. Known for his aggressive playing style, deep opening preparation, and uncompromising will to win, Kasparov dominated the world of chess for over two decades. With a long list of achievements and contributions to chess theory, Kasparov continues to be celebrated as one of the greatest players in history.</p>
+                </div>
+              </div>
+              </div>
+              <!-- modal for the third grid -->
+              <div class="outermodal" id="outermodal3">
+                <div class="modal" id="first-modal">
+                  <div class="innermodal">
+                    <img src="./asset/chess 3.jpg" alt="Viswanathan Anand" width="450" height="500">
+                    <h2>Viswanathan Anand</h2>
+                  </div>
+                  <div class="innermodal"><button class="btn-change view-less">Cancel</button> <p>Viswanathan Anand, born on December 11, 1969, is an Indian chess grandmaster and former World Chess Champion. Known for his dynamic playing style, deep opening preparation, and calm demeanor at the board, Anand has been one of the world's top players for over three decades. With numerous tournament victories and a distinguished career in professional chess, Anand continues to inspire chess enthusiasts around the world.</p>
+            </div>
+                </div>
+                </div>
+                <!-- modal for the fourth grid -->
+                <div class="outermodal" id="outermodal4">
+                  <div class="modal" id="first-modal">
+                    <div class="innermodal">
+                      <img src="./asset/chess4.jpg" alt="Judit Polgar" width="450" height="480">
+                      <h2>Judit Polgar</h2>
+                    </div>
+                    <div class="innermodal"><button class="btn-change view-less">Cancel</button> <p>Judit Polgar, born on July 23, 1976, is a Hungarian chess grandmaster and the greatest female chess player of all time. Known for her exceptional talent, deep understanding of the game, and fearless playing style, Polgar has shattered gender barriers and achieved remarkable success in professional chess. With victories over top male players and a distinguished career spanning several decades, Polgar continues to be an inspiration to chess enthusiasts around the world.</p>
+              </div>
+                  </div>
+                  </div>
+     </section>
+     <script>
+
+
+
+      // navbar
+      window.addEventListener('scroll',() => {
+              const verticalScrollpx = window.scrollY || window.pageYOffset;
+              const navbar = document.getElementById('nav')
+              if(verticalScrollpx <300){
+                  navbar.style.backgroundColor = "";
+                  navbar.style.backdropFilter = "none";
+                  navbar.style.border = "none";
+                  navbar.style.opacity="1";            
+      
+              }
+              else if(verticalScrollpx >300){
+                  navbar.style.backgroundColor = "black";
+                  navbar.style.opacity="0.8";            
+                  navbar.style.boxShadow="none";
+                  navbar.style.backdropFilter = "blur( 20px )";
+                  navbar.style.borderRadius= "10px";
+                  navbar.style.border = "1px solid rgba( 255, 255, 255, 0.18 )";
+                  
+              }
+          });
+      // navbar
+      
+      $(document).ready(function(){
+          $(document).mousemove(function(e){
+              $('#cursor').offset({
+                   top:e.pageY,
+                   left:e.pageX+5
+              })
+          })
+          $('#outerham').click(function () {
+        $('#resp').slideToggle()
+        $('.rotate').toggleClass('hamrotate')
+        $('.innerham-inv').slideToggle()
+      }),
+           // modal 1
+      $('#learnmore-lebron').click(function(){
+        $('#outermodal1').show()
+        $('#outermodal1').animate({
+          'top':'7%'
+        })
+        $('#blurdiv').show()
+        $('body').css('overflow', 'hidden');
+      })
+        $('.view-less').click(function(){
+          $('#outermodal1').hide()
+        $('#outermodal1').animate({
+          'top':'-200%'
+        })
+        $('#blurdiv').hide()
+        $('body').css('overflow', 'visible');
+        })
+    
+    //  modal 2
+    $('#learnmore-kevin').click(function(){
+        $('#outermodal2').show()
+        $('#outermodal2').animate({
+          'top':'7%'
+        })
+        $('#blurdiv').show()
+        $('body').css('overflow', 'hidden');
+      })
+        $('.view-less'||'.outermodal').click(function(){
+          $('#outermodal2').hide()
+        $('#outermodal2').animate({
+          'top':'-200%'
+        })
+        $('#blurdiv').hide()
+        $('body').css('overflow', 'visible');
+        })
+    // modal 3
+        $('#learnmore-stephen').click(function(){
+        $('#outermodal3').show()
+        $('#outermodal3').animate({
+          'top':'7%'
+        })
+        $('#blurdiv').show()
+        $('body').css('overflow', 'hidden');
+      })
+        $('.view-less').click(function(){
+          $('#outermodal3').hide()
+        $('#outermodal3').animate({
+          'top':'-200%'
+        })
+        $('#blurdiv').hide()
+        $('body').css('overflow', 'visible');
+        })
+    // modal 4
+        $('#learnmore-kawhi').click(function(){
+        $('#outermodal4').show()
+        $('#outermodal4').animate({
+          'top':'7%'
+        })
+        $('#blurdiv').show()
+        $('body').css('overflow', 'hidden');
+      })
+        $('.view-less').click(function(){
+          $('#outermodal4').hide()
+        $('#outermodal4').animate({
+          'top':'-200%'
+        })
+        $('#blurdiv').hide()
+        $('body').css('overflow', 'visible');
+        })
+    })
+    </script>
+</html>
