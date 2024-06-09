@@ -78,6 +78,4 @@ window.addEventListener('scroll', () => {
 
 
 
-//   aos animation
 
-AOS.init();

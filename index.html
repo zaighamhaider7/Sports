@@ -2,273 +2,341 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sports Info | Top Players</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Info | Top Players</title>
   <link rel="shortcut icon" href="./asset/Sportsinfo 1-01 (1).png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <!-- jquery js link -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <!-- AOS animation javascript link -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- j-query -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- BS CSS -->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- BS JS -->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body class="bg" data-bs-theme="dark">
-  <!-- webnav -->
-  <nav class="navbar navbar-expand-lg " id="nav">
-    <div id="logo"></div>
-    <div id="outerham">
-      <div class="innerham innerham-inv"></div>
-      <div class="innerham rotate" id="rotate"></div>
-      <div class="innerham innerham-inv"></div>
-    </div>
-    <ul>
-      <li id="home" style="font-size: large; font-weight: bold;"><a href="#">Home</a></li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="sports" href="#" role="button" data-bs-toggle="dropdown"
-          aria-expanded="false">
-          Sports
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="football.html">Football</a></li>
-          <li><a class="dropdown-item" href="hockey.html">Hockey</a></li>
-          <li><a class="dropdown-item" href="basketball.html">Basket-Ball</a></li>
-          <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
-          <li><a class="dropdown-item" href="badminton.html">Badmanton</a></li>
-          <li><a class="dropdown-item" href="motercycle.html">Motorcycle Racing</a></li>
-          <li><a class="dropdown-item" href="golf.html">Golf</a></li>
-          <li><a class="dropdown-item" href="chess.html">Chess</a></li>
-          <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+<body data-bs-theme="dark" id="body" class="bg-dark">
+    <!-- webnav start -->
+    <section id="hero">
+        <header>
+            <nav class=" webnav">
+                <a href="./index.html" class="logo">
+                    <img src="./asset/Sportsinfo 12-01 (1).png" height="80px" width="auto" alt="logo">
+                </a>
+                <img src="./asset/hamburger menu.png" height="30em" width="30em" class="menu" id="humburger">
+
+                <ul class="webnavul">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sports
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="football.html">Football</a></li>
+                            <li><a class="dropdown-item" href="hockey.html">Hockey</a></li>
+                            <li><a class="dropdown-item" href="basketball.html">Basket-Ball</a></li>
+                            <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
+                            <li><a class="dropdown-item" href="badminton.html">Badmanton</a></li>
+                            <li><a class="dropdown-item" href="motercycle.html">Motorcycle Racing</a></li>
+                            <li><a class="dropdown-item" href="golf.html">Golf</a></li>
+                            <li><a class="dropdown-item" href="chess.html">Chess</a></li>
+                            <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- hero-description -->
+        <div class="hero-description">
+            <h1>
+                Sports Info:
+            </h1>
+            <h2 style="color: white ;"><span id="spanone">"Unveiling</span> <span id="spantwo">the Essence</span> <span
+                    id="spanthree">of Athletic Mastery"</span>
+            </h2>
+        </div>
+    </section>
+
+    <!-- responsive nav start -->
+    <nav class="respnav" id="resp-nav">
+        <div class="resp-head">
+            <a href="./index.html" class="logo">
+                <img src="./asset/Sportsinfo 12-01 (1).png" height="80px" width="auto" alt="logo">
+            </a>
+            <img src="./asset/cross bar.png" height="40em" width="40em" class="cross">
+        </div>
+        <ul class="respul">
+            <li><a href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Sports
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="football.html">Football</a></li>
+                    <li><a class="dropdown-item" href="hockey.html">Hockey</a></li>
+                    <li><a class="dropdown-item" href="basketball.html">Basket-Ball</a></li>
+                    <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
+                    <li><a class="dropdown-item" href="badminton.html">Badmanton</a></li>
+                    <li><a class="dropdown-item" href="motercycle.html">Motorcycle Racing</a></li>
+                    <li><a class="dropdown-item" href="golf.html">Golf</a></li>
+                    <li><a class="dropdown-item" href="chess.html">Chess</a></li>
+                    <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+                </ul>
+            </li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
-      </li>
-      <li><a id="about" href="#aboutus">About Us</a></li>
-      <li><a href="#contact">Contact Us</a></li>
+    </nav>
 
-    </ul>
-  </nav>
+    <!-- sports section -->
 
-  <!-- resp navbar -->
-  <div id="resp" class="resp">
-    <ul id="resp-ul1">
-      <li><a href="index.html">Home</a></li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Sports
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="football.html">Football</a></li>
-          <li><a class="dropdown-item" href="hockey.html">Hockey</a></li>
-          <li><a class="dropdown-item" href="basketball.html">Basket-Ball</a></li>
-          <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
-          <li><a class="dropdown-item" href="badminton.html">Badmanton</a></li>
-          <li><a class="dropdown-item" href="motercycle.html">Motorcycle Racing</a></li>
-          <li><a class="dropdown-item" href="golf.html">Golf</a></li>
-          <li><a class="dropdown-item" href="chess.html">Chess</a></li>
-          <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
-        </ul>
-      </li>
-      <li><a href="#aboutus">About Us</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-
-    </ul>
-  </div>
-
-  <!-- Hero-section section  -->
-  <section id="hero">
-    <h1 class="h1-responsive">SportsInfo:</h1>
-    <h2 style="color: white ;"><span id="spanone">"Unveiling</span> <span id="spantwo">the Essence</span> <span
-        id="spanthree">of Athletic Mastery"</span>
-    </h2>
-    <div id="overlay"></div>
-  </section>
-
-  <!-- Grid section -->
-  <section id="second-section">
-    <h2 style="text-shadow: 0px 0px 8px 2px #ff9800; text-size-adjust: 2em;">Sports</h2>
-    <div class="input-group  mb-3">
-      <input type="search" class="form-control " id="search-item" oninput="search()"
-        placeholder="Search Info Of Sports">
-      <button class="btn" id="button-addon2">Search</button>
-    </div>
-    <div class="container text-center" id="product">
-      <div class="row mt-5 mb-3  ">
-        <div class="col mt-3 col-lg-4  col-sm-12  prodItems basketballtopplayer">
-          <div class="cardprod" id="cardprod1">
-            <div class="overlay-grid">
-              <h3 class="cardcontent">Basket-Ball</h3>
-              <p class="cardcontent">Basketball is a dynamic team sport played between two teams of five players each.
-                The objective is to
-                score points by shooting a ball through the opponent's hoop. Fast-paced and requiring a mix of skill and
-                teamwork, basketball is a globally popular sport.</p>
-              <a href="basketball.html" class="cardcontent"> <button class="btn" id="button-addon2">View
-                  More</button></a>
-
-            </div>
-          </div>
-        </div>
-        <div class="col mt-3   col-lg-4  col-sm-12  prodItems basketballtopplayer">
-          <div class="cardprod" id="cardprod2">
-            <div class="overlay-grid">
-              <h3>Cricket</h3>
-              <p>Cricket is a bat-and-ball sport played between two teams of 11 players each. The batting team aims to
-                score runs by hitting the ball and running between wickets, while the bowling team seeks to dismiss
-                batsmen and limit runs. Popular formats include Tests, ODIs, and T20s, contributing to cricket's global
-                appeal.</p>
-              <a href="cricket.html">
-                <button class="btn" id="button-addon2">View More</button> </a>
-            </div>
-          </div>
-        </div>
-        <div class="col mt-3 col-lg-4  col-sm-12  prodItems basketballtopplayer">
-          <div class="cardprod" id="cardprod3">
-            <div class="overlay-grid">
-              <h3>FootBall</h3>
-              <p>Football is a widely-loved team sport played with two teams of eleven players each. The goal is to
-                score by kicking a ball into the opposing team's net. Renowned for its global popularity, football
-                showcases teamwork, skillful plays, and thrilling competitions like the FIFA World Cup.</p>
-              <a href="football.html"><button class="btn" id="button-addon2">View More</button> </a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-5 mb-3">
-        <div class="col mt-3 col-lg-4  col-sm-12 prodItems basketballtopplayer">
-          <div class="cardprod" id="cardprod4">
-            <div class="overlay-grid">
-              <h3>Hockey</h3>
-              <p>Hockey is a dynamic team sport where two teams compete to score goals by hitting a puck or ball into
-                the opponent's net with a stick. Whether played on ice or a field, hockey highlights speed, skill, and
-                teamwork, making it a globally beloved sport.</p>
-              <a href="hockey.html"> <button class="btn" id="button-addon2">View More</button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col mt-3 col-lg-4  col-sm-12 prodItems basketballtopplayer">
-          <div class="cardprod" id="cardprod5">
-            <div class="overlay-grid">
-              <h3>Tennis</h3>
-              <p>Tennis is a racquet sport played individually or in pairs, aiming to score points by hitting a ball
-                over a net into the opponent's court. Known for its fast-paced nature and strategic gameplay, tennis is
-                played on various surfaces and enjoyed worldwide as both a recreational and competitive sport.</p>
-              <a href="tennis.html"> <button class="btn" id="button-addon2">View More</button></a>
-
-            </div>
-          </div>
-        </div>
-        <div class="col mt-3 col-lg-4  col-sm-12 prodItems basketballtopplayer">
-          <div class="cardprod" id="cardprod6">
-            <div class="overlay-grid">
-              <h3>Badminton</h3>
-              <p>Badminton is a racquet sport played by either two individuals (singles) or two pairs (doubles) across a
-                rectangular court divided by a net. The objective is to score points by hitting a shuttlecock over the
-                net, aiming to make it land in the opponent's side. Known for its quick rallies and agility, badminton
-                is played indoors or outdoors, and it's a popular recreational and competitive sport globally.</p>
-              <a href="badminton.html">
-                <button class="btn" id="button-addon2">View More</button>
-
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div><button class="btn view-more" id="button-addon2">View More</button></div>
-      <div id="more-grids">
-        <div class="row mt-5 mb-3 ">
-          <div class="col col-lg-4  col-sm-12 mt-3 prodItems basketballtopplayer">
-            <div class="cardprod" id="cardprod7">
-              <div class="overlay-grid">
-                <h3>Motorcycle-Racing</h3>
-                <p>Motorcycle racing is a high-speed sport where riders compete on specialized bikes in events like road
-                  racing and motocross. Known for its thrilling speed and skillful maneuvers, motorcycle racing attracts
-                  enthusiasts globally, from local races to prestigious international competitions like MotoGP.</p>
-                <a href="motercycle.html">
-                  <button class="btn" id="button-addon2">View More</button>
-
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col col-lg-4  col-sm-12 mt-3 prodItems basketballtopplayer">
-            <div class="cardprod" id="cardprod8">
-              <div class="overlay-grid">
-                <h3>VolleyBall</h3>
-                <p>Volleyball is a team sport with six players on each side, aiming to score points by sending a ball
-                  over the net and into the opponent's court. It requires quick reflexes, teamwork, and strategic play.
-                  Popular in both recreational and competitive settings, volleyball is played globally, including beach
-                  volleyball as a popular variant.</p>
-                <a href="vollyball.html">
-                  <button class="btn" id="button-addon2">View More</button>
-
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col col-lg-4  col-sm-12 mt-3 prodItems basketballtopplayer">
-            <div class="cardprod" id="cardprod9">
-              <div class="overlay-grid">
-                <h3>Golf</h3>
-                <p>Golf is a precision sport played on a course where players aim to hit a ball into holes with as few
-                  strokes as possible. It emphasizes individual skill and strategy, and it is enjoyed globally as both a
-                  recreational and competitive pursuit.</p>
-                <a href="golf.html">
-                  <button class="btn" id="button-addon2">View More</button>
-
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5 mb-3">
-          <div class="col mt-3 prodItems basketballtopplayer">
-            <div class="cardprod" id="cardprod10">
-              <div class="overlay-grid">
-                <h3>Chess</h3>
-                <p>Chess is a classic board game played between two players on an 8x8 grid. The goal is to checkmate the
-                  opponent's king. Known for its strategic depth, chess is played globally, combining skill and
-                  foresight in a timeless and enduring game.</p>
-                <a href="chess.html">
-                  <button class="btn" id="button-addon2">View More</button>
-
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col mt-3 prodItems basketballtopplayer">
-            <div class="cardprod" id="cardprod11">
-              <div class="overlay-grid">
-                <h3>Swimming</h3>
-                <p>Swimming is a water sport involving individuals moving through water using different strokes. It is
-                  both a competitive activity, with races in various styles, and a popular recreational pursuit for
-                  fitness. Swimmers may compete in pools or open water, and the sport enjoys global participation,
-                  highlighted in major events like the Olympics.</p>
-                <a href="swimming.html">
-                  <button class="btn" id="button-addon2">View More</button>
-
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col mt-3 prodItems">
-          </div>
-        </div>
-        <div>
-          <button class="btn view-less" id="button-addon2">View Less</button>
-
+    <section id="sports">
+        <h2>
+            SPORTS
+        </h2>
+        <div class="search-bar">
+            <input type="search"class="form-control" placeholder="Search Info Of Sports" oninput="search()">
+            <!-- <button>Search</button> -->
         </div>
 
-      </div>
-    </div>
+        <div class="container text-center" id="product">
+            <div class="row mt-0 mb-3  ">
+                <div class="col mt-5">
+                    <div class="grid-items" id="g1">
+                        <div class="grid-overlay">
+                            <h3 class="cardcontent">Basket-Ball</h3>
+                            <p class="cardcontent">Basketball is a dynamic team sport played between two teams of five
+                                players each.
+                                The objective is to
+                                score points by shooting a ball through the opponent's hoop. Fast-paced and requiring a
+                                mix of skill and
+                                teamwork, basketball is a globally popular sport.</p>
+                            <a href="basketball.html" class="cardcontent">
+                                <button>
+                                    View More
+                                </button>
+                            </a>
 
-  </section>
- 
-  <!-- about us section-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-5">
+                    <div class="grid-items" id="g2">
+                        <div class="grid-overlay">
+                            <h3>Cricket</h3>
+                            <p>Cricket is a bat-and-ball sport played between two teams of 11 players each. The batting
+                                team aims to
+                                score runs by hitting the ball and running between wickets, while the bowling team seeks
+                                to dismiss
+                                batsmen and limit runs. Popular formats include Tests, ODIs, and T20s, contributing to
+                                cricket's global
+                                appeal.</p>
+                            <a href="cricket.html">
+                                <button>
+                                    View More
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-5">
+                    <div class="grid-items" id="g3">
+                        <div class="grid-overlay">
+                            <h3>FootBall</h3>
+                            <p>Football is a widely-loved team sport played with two teams of eleven players each. The
+                                goal is to
+                                score by kicking a ball into the opposing team's net. Renowned for its global
+                                popularity, football
+                                showcases teamwork, skillful plays, and thrilling competitions like the FIFA World Cup.
+                            </p>
+                            <a href="football.html">
+                                <button>
+                                    View More
+                                </button>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-5 ">
+                    <div class="grid-items" id="g4">
+                        <div class="grid-overlay">
+                            <h3>Hockey</h3>
+                            <p>Hockey is a dynamic team sport where two teams compete to score goals by hitting a puck
+                                or ball into
+                                the opponent's net with a stick. Whether played on ice or a field, hockey highlights
+                                speed, skill, and
+                                teamwork, making it a globally beloved sport.</p>
+                            <a href="hockey.html">
+                                <button>
+                                    View More
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-5 ">
+                    <div class="grid-items" id="g5">
+                        <div class="grid-overlay">
+                            <h3>Tennis</h3>
+                            <p>Tennis is a racquet sport played individually or in pairs, aiming to score points by
+                                hitting a ball
+                                over a net into the opponent's court. Known for its fast-paced nature and strategic
+                                gameplay, tennis is
+                                played on various surfaces and enjoyed worldwide as both a recreational and competitive
+                                sport.</p>
+                            <a href="tennis.html">
+                                <button>
+                                    View More
+                                </button>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-5 ">
+                    <div class="grid-items" id="g6">
+                        <div class="grid-overlay">
+                            <h3>Badminton</h3>
+                            <p>Badminton is a racquet sport played by either two individuals (singles) or two pairs
+                                (doubles) across a
+                                rectangular court divided by a net. The objective is to score points by hitting a
+                                shuttlecock over the
+                                net, aiming to make it land in the opponent's side. Known for its quick rallies and
+                                agility, badminton
+                                is played indoors or outdoors, and it's a popular recreational and competitive sport
+                                globally.</p>
+                            <a href="badminton.html">
+                                <button>
+                                    View More
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="view-more more">
+                    View More
+                </button>
+
+                <div id="more-grids">
+                    <div class="row mt-0 mb-3 ">
+                        <div class="col mt-5">
+                            <div class="grid-items" id="g7">
+                                <div class="grid-overlay">
+                                    <h3>Motorcycle-Racing</h3>
+                                    <p>Motorcycle racing is a high-speed sport where riders compete on specialized bikes
+                                        in events like road
+                                        racing and motocross. Known for its thrilling speed and skillful maneuvers,
+                                        motorcycle racing attracts
+                                        enthusiasts globally, from local races to prestigious international competitions
+                                        like MotoGP.</p>
+                                    <a href="motercycle.html">
+                                        <button>
+                                            View More
+                                        </button>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-5">
+                            <div class="grid-items" id="g8">
+                                <div class="grid-overlay">
+                                    <h3>VolleyBall</h3>
+                                    <p>Volleyball is a team sport with six players on each side, aiming to score points
+                                        by sending a ball
+                                        over the net and into the opponent's court. It requires quick reflexes,
+                                        teamwork, and strategic play.
+                                        Popular in both recreational and competitive settings, volleyball is played
+                                        globally, including beach
+                                        volleyball as a popular variant.</p>
+                                    <a href="vollyball.html">
+                                        <button>
+                                            View More
+                                        </button>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-5">
+                            <div class="grid-items" id="g9">
+                                <div class="grid-overlay">
+                                    <h3>Golf</h3>
+                                    <p>Golf is a precision sport played on a course where players aim to hit a ball into
+                                        holes with as few
+                                        strokes as possible. It emphasizes individual skill and strategy, and it is
+                                        enjoyed globally as both a
+                                        recreational and competitive pursuit.</p>
+                                    <a href="golf.html">
+                                        <button>
+                                            View More
+                                        </button>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-5">
+                            <div class="grid-items" id="g10">
+                                <div class="grid-overlay">
+                                    <h3>Chess</h3>
+                                    <p>Chess is a classic board game played between two players on an 8x8 grid. The goal
+                                        is to checkmate the
+                                        opponent's king. Known for its strategic depth, chess is played globally,
+                                        combining skill and
+                                        foresight in a timeless and enduring game.</p>
+                                    <a href="chess.html">
+                                        <button>
+                                            View More
+                                        </button>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-5">
+                            <div class="grid-items" id="g11">
+                                <div class="grid-overlay">
+                                    <h3>Swimming</h3>
+                                    <p>Swimming is a water sport involving individuals moving through water using
+                                        different strokes. It is
+                                        both a competitive activity, with races in various styles, and a popular
+                                        recreational pursuit for
+                                        fitness. Swimmers may compete in pools or open water, and the sport enjoys
+                                        global participation,
+                                        highlighted in major events like the Olympics.</p>
+                                    <a href="swimming.html">
+                                        <button>
+                                            View More
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class=" view-less more" id="button-addon2">View Less</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+    </section>
+
+      <!-- about us section-->
   <section id="aboutus">
     <h2 style="text-align: center; font-size: 3rem; font-weight: bold;">
       <Span style="color: #ff9800; margin-right: 0.2em;">About</Span><span style="color: #e7e7e7;">Us</span>
@@ -287,7 +355,7 @@
         </p>
       </div>
       <div class="aboutimg">
-        <img src="./asset/pexels-thiago-kai-9381737.jpg" class="intro img-fluid" alt="aboutimg" height="300px"
+        <img src="./asset/about1.jpg" class="intro img-fluid" alt="aboutimg" height="300px"
           width="400px">
       </div>
     </div>
@@ -307,12 +375,12 @@
         </p>
       </div>
       <div class="aboutimg">
-        <img src="./asset/pexels-wallace-chuck-2834917.jpg" class="intro img-fluid" alt="aboutimg" height="300px"
+        <img src="./asset/g1.jpg" class="intro img-fluid" alt="aboutimg" height="300px"
           width="400px">
       </div>
 
     </div>
-    <div class="aboutouter d-lg-flex justify-content-lg-evenly align-items-lg-center mt-5">
+    <div class="aboutouter d-lg-flex justify-content-lg-evenly align-items-lg-center mt-5 mb-4">
       <div class="aboutcontent">
         <h2>
           <span style="color: #ff9800; ">Our</span>
@@ -328,31 +396,29 @@
         </p>
       </div>
       <div class="aboutimg">
-        <img src="./asset/mission.jpg" class="intro img-fluid mb-5" alt="aboutimg" height="300px" width="400px">
+        <img src="./asset/about3.jpg" class="intro img-fluid" alt="aboutimg" height="300px" width="400px">
       </div>
     </div>
     </div>
   </section>
 
-  <!-- contact section -->
+  <!-- contact us section -->
   <section id="contact">
-    <h2>Contact Us</h2>
+    <h2>CONTACT US</h2>
 
-    <form action="https://formsubmit.co/ferozsameer07@gmail.com" method="POST">
-      <label for="name">Enter Your Name...</label>
-      <input type="text" name="name" required>
-      <label for="email">Enter Your Email Address</label>
-      <input type="email" name="email" required>
-      <label for="email">Enter Your Message</label>
-      <input type="text" name="message" required>
-      <button type="submit">Send</button>
+    <form action="https://formsubmit.co/zaighamhaider8@gmail.com" method="POST">
+      <!-- <label for="name"></label> -->
+      <input type="text" name="Name" required placeholder="Enter Your Name...">
+      <!-- <label for="email"></label> -->
+      <input type="email" name="Email" required placeholder="Enter Your Email Address...">
+      <!-- <label for="email"></label> -->
+      <textarea name="Message" placeholder="Enter Your Email Message..."></textarea>
+      <button type="submit" class="more mt-2">Send</button>
     </form>
   </section>
 
-  <!-- cursor -->
-  <div id="cursor"></div>
 
-<!-- footer section -->
+  <!-- footer section -->
   <footer>
     <table>
       <tr>
@@ -399,35 +465,115 @@
     </table>
   </footer>
 
-  <script> 
-    // navbar
-    $(document).ready(function () {
-      $(document).mousemove(function (e) {
-        $('#cursor').offset({
-          top: e.pageY,
-          left: e.pageX + 10
-        })
-      }),
-        $('#outerham').click(function () {
-          $('#resp').slideToggle()
-          $('.rotate').toggleClass('hamrotate')
-          $('.innerham-inv').slideToggle()
-        }),
-        // grid buttons validation start
 
-        $('.view-more').click(function () {
-          $('#more-grids').show()
-          $(this).hide()
-        })
-      $('.view-less').click(function () {
-        $('#more-grids').hide()
-        $('.view-more').show()
-      })
-    })
-  </script>
 
-<script src="main.js"></script>
-  
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- navbar jquery start -->
+    <script>
+        $(document).ready(
+            function () {
+                $('.menu').click(
+                    function () {
+                        $('.respnav').animate(
+                            {
+                                "right": "0%",
+
+                            }
+                        );
+                        $('.respnav').animate(
+                            {
+                                "right": "0%",
+
+                            }
+                        );
+                    }
+                );
+                $(".cross").click(
+                    function () {
+                        $('.respnav').animate(
+                            {
+                                "right": "-100%",
+
+                            }
+                        )
+
+                    }
+                )
+                $("#aboutli").click(
+                    function () {
+                        $('.respnav').animate(
+                            {
+                                "right": "-100%",
+
+                            }, 800
+                        )
+                    }
+                );
+                $("#servicesli").click(
+                    function () {
+                        $('.respnav').animate(
+                            {
+                                "right": "-100%",
+
+                            }, 800
+                        )
+                    }
+                );
+                $("#skillli").click(
+                    function () {
+                        $('.respnav').animate(
+                            {
+                                "right": "-100%",
+
+                            }, 800
+                        )
+                    }
+                );
+                $("#projectli").click(
+                    function () {
+                        $('.respnav').animate(
+                            {
+                                "right": "-100%",
+
+                            }, 800
+                        )
+                    }
+                );
+                $("#contactli").click(
+                    function () {
+                        $('.respnav').animate(
+                            {
+                                "right": "-100%",
+
+                            }, 800
+                        )
+                    }
+                );
+                // grid view more view less btn
+                $('.view-more').click(function () {
+                    $('#more-grids').show()
+                    $(this).hide()
+                })
+                $('.view-less').click(function () {
+                    $('#more-grids').hide()
+                    $('.view-more').show()
+                })
+            }
+        );
+
+
+    </script>
 </body>
 
 </html>
