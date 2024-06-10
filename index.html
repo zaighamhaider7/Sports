@@ -64,7 +64,7 @@
     </section>
 
     <!-- responsive nav start -->
-    <nav class="respnav" id="resp-nav">
+    <div class="respnav" id="resp-nav">
         <div class="resp-head">
             <a href="./index.html" class="logo">
                 <img src="./asset/Sportsinfo 12-01 (1).png" height="80px" width="auto" alt="logo">
@@ -93,7 +93,7 @@
             <li><a href="#aboutus">About Us</a></li>
             <li><a href="#contact">Contact Us</a></li>
         </ul>
-    </nav>
+    </div>
 
     <!-- sports section -->
 
@@ -102,13 +102,12 @@
             SPORTS
         </h2>
         <div class="search-bar">
-            <input type="search"class="form-control" placeholder="Search Info Of Sports" oninput="search()">
-            <!-- <button>Search</button> -->
+            <input type="search"class="form-control" id="search-item" oninput="search()"  placeholder="Search Info Of Sports">
         </div>
 
         <div class="container text-center" id="product">
             <div class="row mt-0 mb-3  ">
-                <div class="col mt-5">
+                <div class="col mt-5 prodItems">
                     <div class="grid-items" id="g1">
                         <div class="grid-overlay">
                             <h3 class="cardcontent">Basket-Ball</h3>
@@ -127,7 +126,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col mt-5">
+                <div class="col mt-5 prodItems">
                     <div class="grid-items" id="g2">
                         <div class="grid-overlay">
                             <h3>Cricket</h3>
@@ -146,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col mt-5">
+                <div class="col mt-5 prodItems">
                     <div class="grid-items" id="g3">
                         <div class="grid-overlay">
                             <h3>FootBall</h3>
@@ -165,7 +164,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col mt-5 ">
+                <div class="col mt-5 prodItems ">
                     <div class="grid-items" id="g4">
                         <div class="grid-overlay">
                             <h3>Hockey</h3>
@@ -182,7 +181,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col mt-5 ">
+                <div class="col mt-5 prodItems ">
                     <div class="grid-items" id="g5">
                         <div class="grid-overlay">
                             <h3>Tennis</h3>
@@ -201,7 +200,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col mt-5 ">
+                <div class="col mt-5 prodItems ">
                     <div class="grid-items" id="g6">
                         <div class="grid-overlay">
                             <h3>Badminton</h3>
@@ -230,7 +229,7 @@
 
                 <div id="more-grids">
                     <div class="row mt-0 mb-3 ">
-                        <div class="col mt-5">
+                        <div class="col mt-5 prodItems">
                             <div class="grid-items" id="g7">
                                 <div class="grid-overlay">
                                     <h3>Motorcycle-Racing</h3>
@@ -249,7 +248,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col mt-5">
+                        <div class="col mt-5 prodItems">
                             <div class="grid-items" id="g8">
                                 <div class="grid-overlay">
                                     <h3>VolleyBall</h3>
@@ -269,7 +268,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col mt-5">
+                        <div class="col mt-5 prodItems">
                             <div class="grid-items" id="g9">
                                 <div class="grid-overlay">
                                     <h3>Golf</h3>
@@ -287,7 +286,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col mt-5">
+                        <div class="col mt-5 prodItems">
                             <div class="grid-items" id="g10">
                                 <div class="grid-overlay">
                                     <h3>Chess</h3>
@@ -305,7 +304,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col mt-5">
+                        <div class="col mt-5 prodItems">
                             <div class="grid-items" id="g11">
                                 <div class="grid-overlay">
                                     <h3>Swimming</h3>
@@ -331,6 +330,7 @@
 
                 </div>
             </div>
+        </div>
 
 
 
@@ -478,6 +478,7 @@
 
 
 
+    <script src="main.js"></script>
 
     <!-- navbar jquery start -->
     <script>
@@ -574,6 +575,7 @@
 
 
     </script>
+
 </body>
 
 </html>
