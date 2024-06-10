@@ -316,6 +316,7 @@ border-bottom: 0.4em solid gray;
 
 .modal-content p {
     color: #fff;
+    font-weight: normal;
 }
 
 .modal-content button {
@@ -500,6 +501,9 @@ border-bottom: 0.4em solid gray;
     display: flex;
     justify-content: center;
 } 
+#top-player p{
+font-weight: normal;
+}
 @media (max-width:1024px) {
     #cursor{
         display: none;
@@ -586,8 +590,16 @@ border-bottom: 0.4em solid gray;
 
 
 
-
-
+/* sports pages button */
+.sports-btn{
+    height: 2.5em;
+    width: 8em;
+    border: 2px solid #ff9800;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 8px;
+    color: #fff;
+}
     /* scroll bar */
 
 ::-webkit-scrollbar {
