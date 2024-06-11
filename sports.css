@@ -140,6 +140,21 @@ body{
         font-size: 3.5rem !important;
         margin-bottom: 0.5em !important;
          }
+         .dropdown-menu{
+            height: 15em;
+            width: 15em;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        .dropdown-menu::-webkit-scrollbar {
+            width: 5px;
+        }
+        
+        /* Handle */
+        .dropdown-menu::-webkit-scrollbar-thumb {
+            background: #ff9800;
+            border-radius: 45px;
+        } 
 }
 
 @media(min-width:770px) {
@@ -285,7 +300,8 @@ border-bottom: 0.4em solid gray;
     height: 100vh;
     width: 100%;
     filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.647);
+    /* background-color: rgba(0, 0, 0, 0.647); */
+    background-color: #ffffff3a;
 }
 .modal-outer {
     display: flex;
@@ -297,6 +313,7 @@ border-bottom: 0.4em solid gray;
     gap: 2em;
     position: relative;
     border-radius: 16px;
+    box-shadow: 0px 0px 50px 2px #11111197;
 }
 
 .modal-img img {
@@ -358,6 +375,7 @@ border-bottom: 0.4em solid gray;
         border-radius: 16px;
         padding: 3% 0%;
         overflow-y: scroll;
+    box-shadow: 0px 0px 50px 2px #11111197;
     }
     .modal-outer::-webkit-scrollbar {
         width: 5px;
@@ -414,6 +432,7 @@ border-bottom: 0.4em solid gray;
         border-radius: 16px;
         padding: 4% 0%;
         overflow-y: scroll;
+    box-shadow: 0px 0px 50px 2px #11111197;
     }
     .modal-outer::-webkit-scrollbar {
         width: 5px;
@@ -471,6 +490,7 @@ border-bottom: 0.4em solid gray;
         border-radius: 16px;
         padding: 4% 0%;
         overflow-y: scroll;
+    box-shadow: 0px 0px 50px 2px #11111197;
     }
     .modal-outer::-webkit-scrollbar {
         width: 5px;
@@ -510,9 +530,6 @@ border-bottom: 0.4em solid gray;
 font-weight: normal;
 }
 @media (max-width:1024px) {
-    #cursor{
-        display: none;
-    }
     #top-player{
         width: 100vw !important;
         align-items: center !important;
@@ -621,7 +638,28 @@ font-weight: normal;
     border-radius: 45px;
 }
 
-/* section{
-    border-bottom: 2px solid gray;
-    margin: 2%;
-} */
+/* up arrow */
+#up{
+    height: 4em;
+    width: 4em;
+    background-color: #111;
+    box-shadow: 0px 0px 30px 2px #11111197;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    position: fixed;
+    bottom: 6%;
+    right: 2%;
+    z-index: 999 !important;
+  }
+  #up i{
+    font-size: 2.3rem;
+    color: #fff;
+    animation: arrow 1s infinite; 
+  }
+  @keyframes arrow{
+     50%{
+      transform: translateY(8px);
+     }
+  }

@@ -1,3 +1,40 @@
+window.addEventListener("scroll", () => {
+  let verticalScrollpx = window.scrollY || window.pageYOffset
+  let arrow = document.getElementById('up')
+
+  if (verticalScrollpx < 100) {
+      arrow.style.display = "none"
+  }
+
+
+  if (verticalScrollpx < 1600 && verticalScrollpx > 100) {
+      arrow.style.display = "flex";
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
    // serach box
