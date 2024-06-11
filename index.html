@@ -20,7 +20,6 @@
 <body data-bs-theme="dark" id="body" class="bg-dark">
     <!-- webnav start -->
     <section id="hero">
-        <header>
             <nav class=" webnav">
                 <a href="./index.html" class="logo">
                     <img src="./asset/Sportsinfo 12-01 (1).png" height="80px" width="auto" alt="logo">
@@ -50,7 +49,6 @@
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </nav>
-        </header>
 
         <!-- hero-description -->
         <div class="hero-description">
@@ -63,37 +61,36 @@
         </div>
     </section>
 
-    <!-- responsive nav start -->
-    <div class="respnav" id="resp-nav">
-        <div class="resp-head">
-            <a href="./index.html" class="logo">
-                <img src="./asset/Sportsinfo 12-01 (1).png" height="80px" width="auto" alt="logo">
-            </a>
-            <img src="./asset/cross bar.png" height="40em" width="40em" class="cross">
-        </div>
-        <ul class="respul">
-            <li><a href="index.html">Home</a></li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Sports
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="football.html">Football</a></li>
-                    <li><a class="dropdown-item" href="hockey.html">Hockey</a></li>
-                    <li><a class="dropdown-item" href="basketball.html">Basket-Ball</a></li>
-                    <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
-                    <li><a class="dropdown-item" href="badminton.html">Badmanton</a></li>
-                    <li><a class="dropdown-item" href="motercycle.html">Motorcycle Racing</a></li>
-                    <li><a class="dropdown-item" href="golf.html">Golf</a></li>
-                    <li><a class="dropdown-item" href="chess.html">Chess</a></li>
-                    <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
-                </ul>
-            </li>
-            <li><a href="#aboutus" id="aboutli">About Us</a></li>
-            <li><a href="#contact" id="contactli">Contact Us</a></li>
-        </ul>
+   <!-- responsive nav start -->
+  <div class="respnav" id="resp-nav">
+    <div class="resp-head">
+      <a href="./index.html" class="logo">
+        <img src="./asset/Sportsinfo 12-01 (1).png" id="logo" height="80px" width="auto" alt="logo">
+      </a>
+      <img src="./asset/cross bar.png" height="40em" width="40em" class="cross">
     </div>
+    <ul class="respul">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Sports
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="football.html">Football</a></li>
+          <li><a class="dropdown-item" href="hockey.html">Hockey</a></li>
+          <li><a class="dropdown-item" href="basketball.html">Basket-Ball</a></li>
+          <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
+          <li><a class="dropdown-item" href="badminton.html">Badmanton</a></li>
+          <li><a class="dropdown-item" href="motercycle.html">Motorcycle Racing</a></li>
+          <li><a class="dropdown-item" href="golf.html">Golf</a></li>
+          <li><a class="dropdown-item" href="chess.html">Chess</a></li>
+          <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+        </ul>
+      </li>
+      <li><a href="./index.html" id="aboutli">About Us</a></li>
+      <li><a href="./index.html" id="contactli">Contact Us</a></li>
+    </ul>
+  </div>
 
     <!-- sports section -->
 
@@ -493,70 +490,66 @@
 
     <script src="main.js"></script>
 
-    <!-- navbar jquery start -->
-    <script>
-        $(document).ready(
-            function () {
-                $('.menu').click(
-                    function () {
-                        $('.respnav').animate(
-                            {
-                                "right": "0%",
-
-                            }
-                        );
-                        $('body').css('overflow', 'hidden');
-
-                    }
-                );
-                $(".cross").click(
-                    function () {
-                        $('.respnav').animate(
-                            {
-                                "right": "-100%",
-
-                            }
-                        );
-                        $('body').css('overflow', 'visible');
-                    }
-                )
-                $("#aboutli").click(
-                    function () {
-                        $('.respnav').animate(
-                            {
-                                "right": "-100%",
-
-                            }, 1000
-                        );
-                        $('body').css('overflow', 'visible');
-
-                    }
-                );
-                $("#contactli").click(
-                    function () {
-                        $('.respnav').animate(
-                            {
-                                "right": "-100%",
-
-                            }, 1000
-                        );
-                        $('body').css('overflow', 'visible');
-                    }
-                );
-                // grid view more view less btn
-                $('.view-more').click(function () {
-                    $('#more-grids').show()
-                    $(this).hide()
-                })
-                $('.view-less').click(function () {
-                    $('#more-grids').hide()
-                    $('.view-more').show()
-                })
-            }
+     <!-- navbar jquery start -->
+  <script>
+    $(document).ready(
+      function () {
+        $('#humburger').click(
+          function () {
+            $('.respnav').animate(
+              {
+                "right": "0%",
+  
+              }
+            );
+            $('body').css('overflow', 'hidden');
+          }
         );
-
-
-    </script>
+        $(".cross").click(
+          function () {
+            $('.respnav').animate(
+              {
+                "right": "-100%",
+  
+              }
+            );
+            $('body').css('overflow', 'visible');
+          }
+        )
+        $("#aboutli").click(
+          function () {
+            $('.respnav').animate(
+              {
+                "right": "-100%",
+  
+              }, 1000
+            )
+          }
+        );
+        $("#contactli").click(
+          function () {
+            $('.respnav').animate(
+              {
+                "right": "-100%",
+  
+              }, 1000
+            )
+          }
+        );
+        // grid view more view less btn
+        $('.view-more').click(function () {
+          $('#more-grids').show()
+          $(this).hide()
+        })
+        $('.view-less').click(function () {
+          $('#more-grids').hide()
+          $('.view-more').show()
+        })
+      }
+    );
+  
+  
+  </script>
 
 </body>
 

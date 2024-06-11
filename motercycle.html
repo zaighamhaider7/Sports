@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motorcycle Racing | SportsInfo</title>
-    <link rel="shortcut icon" href="./asset/Sportsinfo 1-01 (1).png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="sports.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./asset/Sportsinfo 1-01 (1).png" type="image/x-icon">
+    <!-- j-query -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- BS CSS -->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- BS JS -->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
       #first{
         background-image: url(./asset/motorcycle\ racing.jpg);
@@ -19,44 +22,19 @@
     </style>
 </head>
 <body data-bs-theme="dark">
-  <nav class="navbar navbar-expand-lg " id="nav">
-   <a href="index.html">
-    <div id="logo"></div>
-   </a>
-    <div id="outerham">
-      <div class="innerham innerham-inv"></div>
-      <div class="innerham rotate"></div>
-      <div class="innerham innerham-inv"></div>
-    </div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" style="font-weight: bold; font-size: large;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Sports
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="football.html">Football</a></li>
-          <li><a class="dropdown-item" href="hockey.html">Hockey</a></li>
-          <li><a class="dropdown-item" href="basketball.html">Basket-Ball</a></li>
-          <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
-          <li><a class="dropdown-item" href="badminton.html">Badmanton</a></li>
-          <li><a class="dropdown-item" href="motercycle.html">Motorcycle Racing</a></li>
-          <li><a class="dropdown-item" href="golf.html">Golf</a></li>
-          <li><a class="dropdown-item" href="chess.html">Chess</a></li>
-          <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
-        </ul>
-      </li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">FeedBack</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </nav>
-  <!-- responsive menu -->
-  <div id="resp" class="resp">
+<!-- hero-section start -->
+    <section id="first">
+ <!-- webnav start -->
+ <nav class=" webnav">
+  <a href="./index.html" class="logo">
+    <img src="./asset/Sportsinfo 12-01 (1).png" id="logo" height="80px" width="auto" alt="logo">
+  </a>
+  <img src="./asset/hamburger menu.png" class="menu" id="humburger">
+
+  <ul class="webnavul">
     <li><a href="index.html">Home</a></li>
-    <li class="item dropdown">
-      <a class="nav-link dropdown-toggle align-items-center text-center mx-auto " href="#" role="button"
-        data-bs-toggle="dropdown" aria-expanded="false">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         Sports
       </a>
       <ul class="dropdown-menu">
@@ -69,18 +47,20 @@
         <li><a class="dropdown-item" href="golf.html">Golf</a></li>
         <li><a class="dropdown-item" href="chess.html">Chess</a></li>
         <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
-</ul>
+      </ul>
     </li>
-    <li><a href="#">About Us</a></li>
-    <li><a href="#">FeedBack</a></li>
-    <li><a href="#">Contact Us</a></li>
-  </div>
-  <!-- responsive menu ending -->
-  <!-- navbar ends here -->
-    <section id="first">
+    <li><a href="./index.html">About Us</a></li>
+    <li><a href="./index.html">Contact Us</a></li>
+  </ul>
+</nav>
+      <!-- hero-detail -->
        <div id="detail"> 
-        <div><h1 style="margin: 0% auto; text-align:  center; margin-bottom: 1em;font-size: 5vmax;"><span>Motorcycle Racing</span></h1></div>
-        <ul>
+        <div>
+          <h1 style="margin: 0% auto; text-align:center; margin-bottom: 0.8em;font-size: 3.5rem; color: #ff9800; font-style: italic; font-weight: bold;">
+            Motorcycle Racing
+          </h1>
+        </div>
+        <ul style="padding: 0% 2%;">
             <li>  
             <h2 class="h2-responsive"> Extreme Speed and Thrills</h2>
             </li>
@@ -96,11 +76,40 @@
                 <p>Motorcycle racing features a range of international competitions and championships that attract top riders and teams from around the world. Major events include the MotoGP World Championship, the Superbike World Championship, and the Isle of Man TT, known for its challenging street circuit and historic prestige. These events showcase the best riders and motorcycles, thrilling fans with intense battles and close finishes.</p>
         </ul>
     </div>
-
-    </div>
-</div>
 <div id="overlay"></div>
 </section>
+
+ <!-- responsive nav start -->
+ <div class="respnav" id="resp-nav">
+  <div class="resp-head">
+    <a href="./index.html" class="logo">
+      <img src="./asset/Sportsinfo 12-01 (1).png" id="logo" height="80px" width="auto" alt="logo">
+    </a>
+    <img src="./asset/cross bar.png" height="40em" width="40em" class="cross">
+  </div>
+  <ul class="respul">
+    <li><a href="index.html">Home</a></li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Sports
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="football.html">Football</a></li>
+        <li><a class="dropdown-item" href="hockey.html">Hockey</a></li>
+        <li><a class="dropdown-item" href="basketball.html">Basket-Ball</a></li>
+        <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
+        <li><a class="dropdown-item" href="badminton.html">Badmanton</a></li>
+        <li><a class="dropdown-item" href="motercycle.html">Motorcycle Racing</a></li>
+        <li><a class="dropdown-item" href="golf.html">Golf</a></li>
+        <li><a class="dropdown-item" href="chess.html">Chess</a></li>
+        <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+      </ul>
+    </li>
+    <li><a href="./index.html" id="aboutli">About Us</a></li>
+    <li><a href="./index.html" id="contactli">Contact Us</a></li>
+  </ul>
+</div>
+
 <section id="second">
          <div id="acordianouter">
           <div class="accordion" id="accordionExample">
@@ -167,20 +176,22 @@
           </div>
          </div>
               
-          </div>
+          <!-- top player -->
           <div id="top-player" style="width: 100%; align-items: center; margin: 0% auto; align-content: center; height: fit-content; display: flex; flex-direction: column; justify-content: center; text-align: center;">
-            <h2><span>Top Riders</span></h2>
+
+            <h2 style="font-style: italic; font-weight: bold; color: #ff9800;">Top Riders</h2>
             <div class="container text-center">
               <div class="row " >
                 <!-- Marc Marquez Card -->
-                <div class="col mt-3 col-lg-6  col-sm-12 basketballtopplayer" >
+                <div class="col mt-3 basketballtopplayer" >
                   <div class="card" style="width: 18rem;">
-                    <img src="./asset/moto player 1.jpg" class="card-img-top" alt="...">
+                    <img src="./asset/moto player 1.jpg" class="card-img-top" alt="Marc Marquez">
                     <div class="card-body">
+                      <h2 class="card-title">Marc Marquez</h2>
                       <p class="card-text">
-                        <span>Marc Marquez</span>: Marc Marquez, known as "Baby Alien," is a Spanish motorcycle racer hailed as one of the greatest riders in MotoGP history. With his aggressive riding style and fearless approach to racing, Marquez has won multiple MotoGP World Championships, showcasing unmatched talent and determination on the track.
+                      Marc Marquez, known as "Baby Alien," is a Spanish motorcycle racer hailed as one of the greatest riders in MotoGP history. With his aggressive riding style and fearless approach to racing, Marquez has won multiple MotoGP World Championships, showcasing unmatched talent and determination on the track.
                       </p>
-                      <button type="button" class="btn-change" id="learnmore-lebron">
+                      <button type="button" class="sports-btn" id="frstmodalbtn">
                         Learn More
                       </button>
                     </div>
@@ -188,14 +199,15 @@
                 </div>
           
                 <!-- Valentino Rossi Card -->
-                <div class="col mt-3  col-lg-6 col-sm-12 basketballtopplayer" >
+                <div class="col mt-3 basketballtopplayer" >
                   <div class="card" style="width: 18rem; ">
-                    <img src="./asset/moto player 2.jpg" class="card-img-top" alt="...">
+                    <img src="./asset/moto player 2.jpg" class="card-img-top" alt="Valentino Rossi">
                     <div class="card-body">
+                      <h2 class="card-title">Valentino Rossi</h2>
                       <p class="card-text">
-                        <span>Valentino Rossi</span>: Valentino Rossi, known as "The Doctor," is an Italian motorcycle racing legend with a storied career spanning multiple decades. Rossi has won numerous world championships across different classes and remains a beloved figure in the sport for his skill, charisma, and enduring competitiveness.
+                       Valentino Rossi, known as "The Doctor," is an Italian motorcycle racing legend with a storied career spanning multiple decades. Rossi has won numerous world championships across different classes and remains a beloved figure in the sport for his skill, charisma, and enduring competitiveness.
                       </p>
-                      <button type="button" class="btn-change" id="learnmore-kevin">
+                      <button type="button" class="sports-btn" id="scndmodalbtn">
                         Learn More
                       </button>
                     </div>
@@ -205,14 +217,15 @@
           
               <div class="row mt-3">
                 <!-- Jorge Lorenzo Card -->
-                <div class="col mt-3 col-lg-6  col-sm-12  basketballtopplayer">
+                <div class="col mt-3 basketballtopplayer">
                   <div class="card" style="width: 18rem;">
-                    <img src="./asset/moto player 3.jpg" class="card-img-top" alt="...">
+                    <img src="./asset/moto player 3.jpg" class="card-img-top" alt="Jorge Lorenzo">
                     <div class="card-body">
+                      <h2 class="card-title">Jorge Lorenzo</h2>
                       <p class="card-text">
-                        <span>Jorge Lorenzo</span>: Jorge Lorenzo, known as "Por Fuera," is a Spanish motorcycle racer known for his smooth riding style and technical prowess. Lorenzo has won multiple MotoGP World Championships throughout his career, establishing himself as one of the sport's elite riders with his strategic approach and precise execution on the track.
+                        Jorge Lorenzo, known as "Por Fuera," is a Spanish motorcycle racer known for his smooth riding style and technical prowess. Lorenzo has won multiple MotoGP World Championships throughout his career, establishing himself as one of the sport's elite riders with his strategic approach and precise execution on the track.
                       </p>
-                      <button type="button" class="btn-change" id="learnmore-stephen">
+                      <button type="button" class="sports-btn" id="thirdmodalbtn">
                         Learn More
                       </button>
                     </div>
@@ -220,14 +233,15 @@
                 </div>
           
                 <!-- Casey Stoner Card -->
-                <div class="col mt-3 col-lg-6  col-sm-12  basketballtopplayer">
+                <div class="col mt-3 basketballtopplayer">
                   <div class="card" style="width: 18rem;">
-                    <img src="./asset/moto player 4.jpg" class="card-img-top" alt="...">
+                    <img src="./asset/moto player 4.jpg" class="card-img-top" alt="Casey Stoner">
                     <div class="card-body">
+                      <h2 class="card-title">Casey Stoner</h2>
                       <p class="card-text">
-                        <span>Casey Stoner</span>: Casey Stoner, known for his fearless riding style and exceptional talent, is an Australian motorcycle racing champion. Stoner has won multiple MotoGP World Championships and earned a reputation for his natural ability to push the limits of motorcycle performance, making him a legend in the sport.
+                        Casey Stoner, known for his fearless riding style and exceptional talent, is an Australian motorcycle racing champion. Stoner has won multiple MotoGP World Championships and earned a reputation for his natural ability to push the limits of motorcycle performance, making him a legend in the sport.
                       </p>
-                      <button type="button" class="btn-change" id="learnmore-kawhi">
+                      <button type="button" class="sports-btn" id="fourthmodalbtn">
                         Learn More
                       </button>
                     </div>
@@ -236,165 +250,227 @@
               </div>
             </div>
           </div>
-           <!-- modal for the first grid -->
-           <div class="outermodal" id="outermodal1">
-            <div class="modal" id="first-modal">
-              <div class="innermodal">
-                <img src="./asset/moto player 1.jpg" alt="Marc Marquez" width="450" height="480">
-                <h2>Marc Marquez</h2>
-              </div>
-              <div class="innermodal"> <button class="btn-change view-less">Cancel</button>
-                <p>Marc Marquez, born on February 17, 1993, is a Spanish motorcycle racer known for his aggressive riding style and unmatched success in MotoGP competition. Marquez has won multiple MotoGP World Championships, becoming the youngest rider in history to achieve such a feat. With his fearless approach to racing and exceptional talent on the track, Marquez continues to push the boundaries of motorcycle racing and inspire fans around the world.</p>
-          </div>
-            </div>
-            </div>
-            <!-- modal for the second grid -->
-            <div class="outermodal" id="outermodal2">
-              <div class="modal" id="first-modal">
-                <div class="innermodal">
-                  <img src="./asset/moto player 2.jpg" alt="Valentino Rossi" width="450" height="480">
-                  <h2>Valentino Rossi</h2>
-                </div>
-                <div class="innermodal"> <button class="btn-change view-less">Cancel</button>
-                  <p>Valentino Rossi, born on February 16, 1979, is an Italian motorcycle racing icon with a legendary career spanning multiple decades. Rossi has won numerous world championships across different classes, earning the nickname "The Doctor" for his clinical precision and strategic brilliance on the track. As one of the most successful riders in MotoGP history, Rossi's legacy continues to inspire generations of fans and aspiring racers.</p>
-                </div>
-              </div>
-              </div>
-              <!-- modal for the third grid -->
-              <div class="outermodal" id="outermodal3">
-                <div class="modal" id="first-modal">
-                  <div class="innermodal">
-                    <img src="./asset/moto player 3.jpg" alt="Jorge Lorenzo" width="450" height="500">
-                    <h2>Jorge Lorenzo</h2>
-                  </div>
-                  <div class="innermodal"><button class="btn-change view-less">Cancel</button> <p>Jorge Lorenzo, born on May 4, 1987, is a Spanish motorcycle racing champion known for his smooth riding style and tactical brilliance on the track. Lorenzo has won multiple MotoGP World Championships throughout his career, showcasing exceptional skill and determination in highly competitive racing environments. With his strategic approach and technical expertise, Lorenzo has left an indelible mark on the sport of motorcycle racing.</p>
-            </div>
-                </div>
-                </div>
-                <!-- modal for the fourth grid -->
-                <div class="outermodal" id="outermodal4">
-                  <div class="modal" id="first-modal">
-                    <div class="innermodal">
-                      <img src="./asset/moto player 4.jpg" alt="Casey Stoner" width="450" height="480">
-                      <h2>Casey Stoner</h2>
-                    </div>
-                    <div class="innermodal"><button class="btn-change view-less">Cancel</button> <p>Casey Stoner, born on October 16, 1985, is an Australian motorcycle racing legend known for his fearless riding style and exceptional talent on the track. Stoner has won multiple MotoGP World Championships, earning a reputation as one of the sport's greatest riders. With his natural ability to push the limits of motorcycle performance, Stoner has inspired generations of racers and cemented his legacy as a true icon in motorcycle racing history.</p>
-              </div>
-                  </div>
-                  </div>
      </section>
-     <div id="cursor"></div>
-    <!--second section ends here -->
-
-    <!-- second section ends here -->
-<script src="sports.js"></script>
-<script>
 
 
-
-  // navbar
-  window.addEventListener('scroll',() => {
-          const verticalScrollpx = window.scrollY || window.pageYOffset;
-          const navbar = document.getElementById('nav')
-          if(verticalScrollpx <800){
-              navbar.style.backgroundColor = "";
-              navbar.style.backdropFilter = "none";
-              navbar.style.border = "none";
-              navbar.style.opacity="1";            
+       <!-- first grid modal -->
+  <div class="modal-section" id="firstmodal">
+    <div id="blurbg">
+    </div>
+    <div class="modal-outer">
+      <div class="modal-img">
+        <img src="./asset/moto player 1.jpg" alt="Marc Marquez" height="450" width="280">
+      </div>
+      <div class="modal-content">
+        <h2>
+          Marc Marquez
+        </h2>
+        <p>Marc Marquez, born on February 17, 1993, is a Spanish motorcycle racer known for his aggressive riding style and unmatched success in MotoGP competition. Marquez has won multiple MotoGP World Championships, becoming the youngest rider in history to achieve such a feat. With his fearless approach to racing and exceptional talent on the track, Marquez continues to push the boundaries of motorcycle racing and inspire fans around the world.
+        </p>
+        <button class="view-less">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- second grid modal -->
+  <div class="modal-section" id="secondmodal">
+    <div id="blurbg">
+    </div>
+    <div class="modal-outer">
+      <div class="modal-img">
+        <img src="./asset/moto player 2.jpg" alt="Valentino Rossi" height="450" width="280">
+      </div>
+      <div class="modal-content">
+        <h2>
+          Valentino Rossi
+        </h2>
+        <p>
+          Valentino Rossi, born on February 16, 1979, is an Italian motorcycle racing icon with a legendary career spanning multiple decades. Rossi has won numerous world championships across different classes, earning the nickname "The Doctor" for his clinical precision and strategic brilliance on the track. As one of the most successful riders in MotoGP history, Rossi's legacy continues to inspire generations of fans and aspiring racers.
+        </p>
+        <button class="view-less">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+   <!-- third grid modal -->
+   <div class="modal-section" id="thirdmodal">
+    <div id="blurbg">
+    </div>
+    <div class="modal-outer">
+      <div class="modal-img">
+        <img src="./asset/moto player 3.jpg" alt="Jorge Lorenzo" height="450" width="280">
+      </div>
+      <div class="modal-content">
+        <h2>
+          Jorge Lorenzo
+        </h2>
+        <p>
+          Jorge Lorenzo, born on May 4, 1987, is a Spanish motorcycle racing champion known for his smooth riding style and tactical brilliance on the track. Lorenzo has won multiple MotoGP World Championships throughout his career, showcasing exceptional skill and determination in highly competitive racing environments. With his strategic approach and technical expertise, Lorenzo has left an indelible mark on the sport of motorcycle racing.</p>
+        <button class="view-less">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
   
-          }
-          else if(verticalScrollpx >800){
-              navbar.style.backgroundColor = "black";
-              navbar.style.opacity="0.8";            
-              navbar.style.boxShadow="none";
-              navbar.style.backdropFilter = "blur( 20px )";
-              navbar.style.borderRadius= "10px";
-              navbar.style.border = "1px solid rgba( 255, 255, 255, 0.18 )";
-              
-          }
-      });
-  // navbar
-  
-  $(document).ready(function(){
-      $(document).mousemove(function(e){
-          $('#cursor').offset({
-               top:e.pageY,
-               left:e.pageX+5
+    <!-- fourth grid modal -->
+    <div class="modal-section" id="fourthmodal">
+      <div id="blurbg">
+      </div>
+      <div class="modal-outer">
+        <div class="modal-img">
+          <img src="./asset/moto player 4.jpg" alt="Casey Stoner" height="450" width="280">
+        </div>
+        <div class="modal-content">
+          <h2>
+            Casey Stoner
+          </h2>
+           <p>
+            Casey Stoner, born on October 16, 1985, is an Australian motorcycle racing legend known for his fearless riding style and exceptional talent on the track. Stoner has won multiple MotoGP World Championships, earning a reputation as one of the sport's greatest riders. With his natural ability to push the limits of motorcycle performance, Stoner has inspired generations of racers and cemented his legacy as a true icon in motorcycle racing history.
+           </p>
+          <button class="view-less">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+     
+    <!-- navbar jquery start -->
+    <script>
+      $(document).ready(
+        function () {
+          $('.menu').click(
+            function () {
+              $('.respnav').animate(
+                {
+                  "right": "0%",
+    
+                }
+              );
+              $('body').css('overflow', 'hidden');
+            }
+          );
+          $(".cross").click(
+            function () {
+              $('.respnav').animate(
+                {
+                  "right": "-100%",
+    
+                }
+              );
+              $('body').css('overflow', 'visible');
+            }
+          )
+          $("#aboutli").click(
+            function () {
+              $('.respnav').animate(
+                {
+                  "right": "-100%",
+    
+                }, 1000
+              )
+            }
+          );
+          $("#contactli").click(
+            function () {
+              $('.respnav').animate(
+                {
+                  "right": "-100%",
+    
+                }, 1000
+              )
+            }
+          );
+          // grid view more view less btn
+          $('.view-more').click(function () {
+            $('#more-grids').show()
+            $(this).hide()
           })
-      })
-      $('#outerham').click(function () {
-        $('#resp').slideToggle()
-        $('.rotate').toggleClass('hamrotate')
-        $('.innerham-inv').slideToggle()
-      }),
-       // modal 1
-  $('#learnmore-lebron').click(function(){
-    $('#outermodal1').show()
-    $('#outermodal1').animate({
-      'top':'7%'
-    })
-    $('#blurdiv').show()
-    $('body').css('overflow', 'hidden');
-  })
-    $('.view-less').click(function(){
-      $('#outermodal1').hide()
-    $('#outermodal1').animate({
-      'top':'-200%'
-    })
-    $('#blurdiv').hide()
-    $('body').css('overflow', 'visible');
-    })
-
-//  modal 2
-$('#learnmore-kevin').click(function(){
-    $('#outermodal2').show()
-    $('#outermodal2').animate({
-      'top':'7%'
-    })
-    $('#blurdiv').show()
-    $('body').css('overflow', 'hidden');
-  })
-    $('.view-less'||'.outermodal').click(function(){
-      $('#outermodal2').hide()
-    $('#outermodal2').animate({
-      'top':'-200%'
-    })
-    $('#blurdiv').hide()
-    $('body').css('overflow', 'visible');
-    })
-// modal 3
-    $('#learnmore-stephen').click(function(){
-    $('#outermodal3').show()
-    $('#outermodal3').animate({
-      'top':'7%'
-    })
-    $('#blurdiv').show()
-    $('body').css('overflow', 'hidden');
-  })
-    $('.view-less').click(function(){
-      $('#outermodal3').hide()
-    $('#outermodal3').animate({
-      'top':'-200%'
-    })
-    $('#blurdiv').hide()
-    $('body').css('overflow', 'visible');
-    })
-// modal 4
-    $('#learnmore-kawhi').click(function(){
-    $('#outermodal4').show()
-    $('#outermodal4').animate({
-      'top':'7%'
-    })
-    $('#blurdiv').show()
-    $('body').css('overflow', 'hidden');
-  })
-    $('.view-less').click(function(){
-      $('#outermodal4').hide()
-    $('#outermodal4').animate({
-      'top':'-200%'
-    })
-    $('#blurdiv').hide()
-    $('body').css('overflow', 'visible');
-    })
-})
-</script>
+          $('.view-less').click(function () {
+            $('#more-grids').hide()
+            $('.view-more').show()
+          })
+        }
+      );
+    
+    
+    </script>
+    <!-- modal jquery -->
+    <script>
+      $(document).ready(function () {
+        // first modal
+        $("#frstmodalbtn").click(function () {
+          $("#firstmodal").animate({
+            'top': '7%'
+          });
+          $("#blurbg").animate({
+            'top': '0%'
+          });
+          $('body').css('overflow', 'hidden');
+        });
+        // second modal
+        $("#scndmodalbtn").click(function () {
+          $("#secondmodal").animate({
+            'top': '7%'
+          });
+          $("#blurbg").animate({
+            'top': '0%'
+          });
+          $('body').css('overflow', 'hidden');
+        });
+        // third modal
+        $("#thirdmodalbtn").click(function () {
+          $("#thirdmodal").animate({
+            'top': '7%'
+          });
+          $("#blurbg").animate({
+            'top': '0%'
+          });
+          $('body').css('overflow', 'hidden');
+        });
+  
+          // fourth modal
+        $("#fourthmodalbtn").click(function () {
+          $("#fourthmodal").animate({
+            'top': '7%'
+          });
+          $("#blurbg").animate({
+            'top': '0%'
+          });
+          $('body').css('overflow', 'hidden');fourthmodalbtn
+        });
+  
+  
+  
+  
+  
+  
+        // view less
+        $('.view-less').click(
+          function () {
+            $(".modal-section").animate(
+              {
+                'top': '-500%'
+              }
+            );
+            $("#blurbg").animate({
+              'top': '-500%'
+            });
+            $('body').css('overflow', 'visible');
+          }
+        )
+      });
+  
+    </script>   
+</body>
+</html>

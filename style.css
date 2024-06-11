@@ -2,7 +2,7 @@ body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 html {
@@ -99,12 +99,15 @@ li {
     transition: 0.3s;
     letter-spacing: 2px;
 }
-
-li:hover {
-    color: #ff9800;
+.webnav a {
+    transition: 0.3s;
+}
+.webnav a:hover {
+    color: #ff9800 !important;
 }
 
 .webnavul a {
+    color: #fff;
     text-decoration: none;
 }
 
@@ -141,11 +144,14 @@ li:hover {
     margin: 0%;
 }
 
-.respul {
-    color: #fff !important;
+.respnav a {
+    color: #fff;
     text-decoration: none;
+    transition: 0.3s;
 }
-
+.respnav a:hover {
+    color: #ff9800 !important;
+}
 /* menu section start */
 .menu {
     cursor: pointer;

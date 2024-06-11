@@ -99,6 +99,7 @@ body{
 .respnav a:hover {
     color: #ff9800 !important;
 }
+
 /* menu section start */
 .menu {
     cursor: pointer;
@@ -135,6 +136,10 @@ body{
         align-items: center;
         text-align: center;
     }
+    #swimmming{
+        font-size: 3.5rem !important;
+        margin-bottom: 0.5em !important;
+         }
 }
 
 @media(min-width:770px) {
@@ -560,6 +565,10 @@ font-weight: normal;
     #logo{
         height: 70px;
         width: auto;
+     }
+     #swimmming{
+    font-size: 3.5rem !important;
+    margin-bottom: 0.5em !important;
      }
 #heading h1{
     font-size: 3rem !important;
