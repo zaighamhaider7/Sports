@@ -3,15 +3,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cricket | SportsInfo</title>
-    <link rel="shortcut icon" href="./asset/Sportsinfo 1-01 (1).png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
     <link rel="stylesheet" href="sports.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./asset/Sportsinfo 1-01 (1).png" type="image/x-icon">
+  <!-- j-query -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- BS CSS -->
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- BS JS -->
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
       #first{
         background-image: url(./asset/cricket.jpg) !important;
@@ -19,70 +21,42 @@
     </style>
 </head>
 <body data-bs-theme="dark">
-  <nav class="navbar navbar-expand-lg " id="nav">
-    <a href="index.html">
-      <div id="logo"></div>
-    
-    </a>
-    <div id="outerham">
-      <div class="innerham innerham-inv"></div>
-      <div class="innerham rotate"></div>
-      <div class="innerham innerham-inv"></div>
-    </div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" style="font-weight: bold; font-size: large;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Sports
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="football.html">Football</a></li>
-          <li><a class="dropdown-item" href="hockey.html">Hockey</a></li>
-          <li><a class="dropdown-item" href="basketball.html">Basket-Ball</a></li>
-          <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
-          <li><a class="dropdown-item" href="badminton.html">Badmanton</a></li>
-          <li><a class="dropdown-item" href="motercycle.html">Motorcycle Racing</a></li>
-          <li><a class="dropdown-item" href="golf.html">Golf</a></li>
-          <li><a class="dropdown-item" href="chess.html">Chess</a></li>
-          <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
-        </ul>
-      </li>
-      <li><a href="index.html">About Us</a></li>
-      <li><a href="index.html">FeedBack</a></li>
-      <li><a href="index.html">Contact Us</a></li>
-
-    </ul>
-  </nav>
-  <!-- responsive menu -->
-  <div id="resp" class="resp">
-    <li><a href="index.html">Home</a></li>
-    <li class="item dropdown">
-      <a class="nav-link dropdown-toggle align-items-center text-center mx-auto " href="#" role="button"
-        data-bs-toggle="dropdown" aria-expanded="false">
-        Sports
-      </a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="football.html">Football</a></li>
-        <li><a class="dropdown-item" href="hockey.html">Hockey</a></li>
-        <li><a class="dropdown-item" href="basketball.html">Basket-Ball</a></li>
-        <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
-        <li><a class="dropdown-item" href="badminton.html">Badmanton</a></li>
-        <li><a class="dropdown-item" href="motercycle.html">Motorcycle Racing</a></li>
-        <li><a class="dropdown-item" href="golf.html">Golf</a></li>
-        <li><a class="dropdown-item" href="chess.html">Chess</a></li>
-        <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
-      </ul>
-    </li>
-    <li><a href="#">About Us</a></li>
-    <li><a href="#">FeedBack</a></li>
-    <li><a href="#">Contact Us</a></li>
-  </div>
-  <!-- responsive menu ending -->
-  <!-- navbar ends here -->
     <section id="first">
+      <!-- webnav start -->
+      <nav class=" webnav">
+        <a href="./index.html" class="logo">
+          <img src="./asset/Sportsinfo 12-01 (1).png" id="logo" height="80px" width="auto" alt="logo">
+        </a>
+        <img src="./asset/hamburger menu.png" class="menu" id="humburger">
+  
+        <ul class="webnavul">
+          <li><a href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sports
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="football.html">Football</a></li>
+              <li><a class="dropdown-item" href="hockey.html">Hockey</a></li>
+              <li><a class="dropdown-item" href="basketball.html">Basket-Ball</a></li>
+              <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
+              <li><a class="dropdown-item" href="badminton.html">Badmanton</a></li>
+              <li><a class="dropdown-item" href="motercycle.html">Motorcycle Racing</a></li>
+              <li><a class="dropdown-item" href="golf.html">Golf</a></li>
+              <li><a class="dropdown-item" href="chess.html">Chess</a></li>
+              <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+            </ul>
+          </li>
+          <li><a href="./index.html">About Us</a></li>
+          <li><a href="./index.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- hero-detail -->
        <div id="detail"> 
-        <div><h1 style="margin: 0% auto; text-align:  center; margin-bottom: 1em;font-size: 5vmax;"><span>Cricket</span></h1></div>
-        <ul>
+        <div>
+          <h1 style="margin: 0% auto; text-align:center; margin-bottom: 0.2em;font-size: 4rem; color: #ff9800; font-style: italic; font-weight: bold;">Cricket</h1>
+        </div>
+        <ul style="padding: 0% 2%;">
             <li>  
             <h2 class="h2-responsive"> A Dynamic Team Sport</h2>
             </li>
@@ -102,11 +76,40 @@
                 </p>
         </ul>
     </div>
-
-    </div>
-</div>
 <div id="overlay"></div>
 </section>
+
+  <!-- responsive nav start -->
+  <div class="respnav" id="resp-nav">
+    <div class="resp-head">
+      <a href="./index.html" class="logo">
+        <img src="./asset/Sportsinfo 12-01 (1).png" id="logo" height="80px" width="auto" alt="logo">
+      </a>
+      <img src="./asset/cross bar.png" height="40em" width="40em" class="cross">
+    </div>
+    <ul class="respul">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Sports
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="football.html">Football</a></li>
+          <li><a class="dropdown-item" href="hockey.html">Hockey</a></li>
+          <li><a class="dropdown-item" href="basketball.html">Basket-Ball</a></li>
+          <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
+          <li><a class="dropdown-item" href="badminton.html">Badmanton</a></li>
+          <li><a class="dropdown-item" href="motercycle.html">Motorcycle Racing</a></li>
+          <li><a class="dropdown-item" href="golf.html">Golf</a></li>
+          <li><a class="dropdown-item" href="chess.html">Chess</a></li>
+          <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+        </ul>
+      </li>
+      <li><a href="./index.html" id="aboutli">About Us</a></li>
+      <li><a href="./index.html" id="contactli">Contact Us</a></li>
+    </ul>
+  </div>
+
 <section id="second">
          <div id="acordianouter">
           <div class="accordion" id="accordionExample">
@@ -183,23 +186,25 @@
             </div>
           </div>
          </div>
-              
-          </div>
+        <!-- top players -->
           <div id="top-player" style="width: 100%; align-items: center; margin: 0% auto; align-content: center; height: fit-content; display: flex; flex-direction: column; justify-content: center; text-align: center;">
-            <h2><span>Top Players</span></h2>
+            <h2 style="font-style: italic; font-weight: bold; color: #ff9800;">Top Players</h2>
             <div class="container text-center">
+
+              
               <div class="row " >
                 <!-- virat kohli Card -->
-                <div class="col mt-3 col-lg-6  col-sm-12 basketballtopplayer" >
+                <div class="col mt-3 basketballtopplayer" >
                   <div class="card" style="width: 18rem;">
                     <img src="./asset/virat.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
+                      <h2 class="card-title">Virat Kohli</h2>
                       <p class="card-text">
-                        <span>Virat Kohli</span>:hailed as one of cricket's modern greats, is renowned for his remarkable batting prowess and consistency across all formats. With a technically sound technique and unmatched determination, Kohli has dominated bowlers worldwide. His leadership skills and aggressive approach make him a force to be reckoned with on the cricket field, inspiring millions of fans globally.
+                        hailed as one of cricket's modern greats, is renowned for his remarkable batting prowess and consistency across all formats. With a technically sound technique and unmatched determination, Kohli has dominated bowlers worldwide. His leadership skills and aggressive approach make him a force to be reckoned with on the cricket field, inspiring millions of fans globally.
                         <!-- Button trigger modal -->
                        
                       </p>
-                      <button type="button" class="btn-change" id="learnmore-lebron">
+                      <button type="button" class="sports-btn" id="frstmodalbtn">
                         Learn More
                       </button>
                     </div>
@@ -207,15 +212,16 @@
                 </div>
           
                 <!-- Ben Stokes Card -->
-                <div class="col mt-3  col-lg-6 col-sm-12 basketballtopplayer" >
+                <div class="col mt-3 basketballtopplayer" >
                   <div class="card" style="width: 18rem; ">
                     <img src="./asset/ben-stokes.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
+                      <h2 class="card-title">Ben Stokes</h2>
                       <p class="card-text">
-                        <span>Ben Stokes</span>:a dynamic all-rounder, possesses a unique ability to turn matches with his explosive batting and impactful bowling performances. Known for his never-say-die attitude and extraordinary athleticism, Stokes has been instrumental in numerous memorable victories for his team. His versatility and passion for the game make him a true asset to the cricketing world.
+                      a dynamic all-rounder, possesses a unique ability to turn matches with his explosive batting and impactful bowling performances. Known for his never-say-die attitude and extraordinary athleticism, Stokes has been instrumental in numerous memorable victories for his team. His versatility and passion for the game make him a true asset to the cricketing world.
                         <!-- Button trigger modal -->
                       </p>
-                      <button type="button" class="btn-change" id="learnmore-kevin">
+                      <button type="button" class="sports-btn" id="scndmodalbtn">
                         Learn More
                       </button>
                     </div>
@@ -225,16 +231,15 @@
           
               <div class="row mt-3">
                 <!-- AB de Villiers Card -->
-                <div class="col mt-3 col-lg-6  col-sm-12  basketballtopplayer">
+                <div class="col mt-3 basketballtopplayer">
                   <div class="card" style="width: 18rem;">
                     <img src="./asset/ab de.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
+                      <h2 class="card-title">AB De Villiers</h2>
                       <p class="card-text">
-                        <span>AB de Villiers</span>: fondly known as Mr. 360, is celebrated for his innovative batting style and ability to play shots all around the ground. With unparalleled agility and instinct, he has redefined modern batting, showcasing breathtaking strokeplay and game-changing innings. De Villiers' remarkable skills and calm demeanor under pressure make him a cricketing icon admired by fans worldwide.
-                        <!-- Button trigger modal -->
-                        
+                        fondly known as Mr. 360, is celebrated for his innovative batting style and ability to play shots all around the ground. With unparalleled agility and instinct, he has redefined modern batting, showcasing breathtaking strokeplay and game-changing innings. De Villiers' remarkable skills and calm demeanor under pressure make him a cricketing icon admired by fans worldwide.                        
                       </p>
-                      <button type="button" class="btn-change" id="learnmore-stephen">
+                      <button type="button" class="sports-btn" id="thirdmodalbtn">
                         Learn More
                       </button>
                     </div>
@@ -242,15 +247,18 @@
                 </div>
           
                 <!-- Shakib Al Hasan Card -->
-                <div class="col mt-3 col-lg-6  col-sm-12  basketballtopplayer">
+                <div class="col mt-3 basketballtopplayer">
                   <div class="card" style="width: 18rem;">
                     <img src="./asset/shakib.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
+                      <h2 class="card-title">
+                        Shakib Al Hasan
+                      </h2>
                       <p class="card-text">
-                        <span>Shakib Al Hasan</span>:  a versatile all-rounder, is hailed for his exceptional batting, bowling, and fielding abilities. With his astute cricketing mind and consistent performances, Shakib has been a linchpin for his team across all formats. His ability to deliver in crunch situations and contribute in multiple facets of the game makes him a true match-winner.
+                       a versatile all-rounder, is hailed for his exceptional batting, bowling, and fielding abilities. With his astute cricketing mind and consistent performances, Shakib has been a linchpin for his team across all formats. His ability to deliver in crunch situations and contribute in multiple facets of the game makes him a true match-winner.
                         <!-- Button trigger modal -->
                       </p>
-                      <button type="button" class="btn-change" id="learnmore-kawhi">
+                      <button type="button" class="sports-btn" id="fourthmodalbtn">
                         Learn More
                       </button>
                     </div>
@@ -258,170 +266,229 @@
                 </div>
               </div>
             </div>
-          </div>
-           <!-- modal for the first grid -->
-           <div class="outermodal" id="outermodal1">
-            <div class="modal" id="first-modal">
-              <div class="innermodal">
-                <img src="./asset/virat.jpg" alt="Lebron James" width="400" height="450">
-                <h2>Virat Kohli</h2>
-              </div>
-              <div class="innermodal"> <button class="btn-change view-less">Cancel</button>
-                <p>Virat Kohli, born on November 5, 1988, is a cricketing maestro celebrated for his unwavering dedication, remarkable batting prowess, and astute leadership. Standing tall at 5 feet 9 inches, Kohli has clinched numerous accolades, including ICC awards and Indian Premier League titles. Beyond cricket, he champions social causes, embodying resilience and excellence both on and off the pitch.</p>
-          </div>
-            </div>
-            </div>
-            <!-- modal for the second grid -->
-            <div class="outermodal" id="outermodal2">
-              <div class="modal" id="first-modal">
-                <div class="innermodal">
-                  <img src="./asset/ben-stokes.jpg" alt="Lebron James" width="450" height="480">
-                  <h2>Ben Stokes</h2>
-                </div>
-                <div class="innermodal"> <button class="btn-change view-less">Cancel</button>
-                  <p>Born on June 4, 1991, Ben Stokes epitomizes cricketing brilliance with his explosive batting, dynamic bowling, and agile fielding. Standing tall at 6 feet 1 inch, Stokes boasts a string of memorable performances, including his heroic feats in critical matches. His indomitable spirit and versatility make him a game-changer, inspiring fans worldwide with his passion and resilience.</p>
-                </div>
-              </div>
-              </div>
-              <!-- modal for the third grid -->
-              <div class="outermodal" id="outermodal3">
-                <div class="modal" id="first-modal">
-                  <div class="innermodal">
-                    <img src="./asset/ab de.jpg" alt="Lebron James" width="500" height="450">
-                    <h2>AB DE Villiers</h2>
-                  </div>
-                  <div class="innermodal"><button class="btn-change view-less">Cancel</button> <p>AB de Villiers, born on February 17, 1984, is a cricketing phenomenon known for his innovative batting, unparalleled agility, and unmatched versatility. Standing at 6 feet tall, de Villiers has mesmerized audiences with his audacious strokeplay and ability to dominate any bowling attack. His impact transcends the cricket field, as he continues to inspire with his sportsmanship and dedication to humanitarian causes.</p>
-                   </div>
-                </div>
-                </div>
-              <!-- modal for the fourth grid -->
-                <div class="outermodal" id="outermodal4">
-                  <div class="modal" id="first-modal">
-                    <div class="innermodal">
-                      <img src="./asset/shakib.jpg" alt="Lebron James" width="450" height="450">
-                      <h2>Shakib Hassan</h2>
-                    </div>
-                    <div class="innermodal"> 
-                      <button class="btn-change view-less">Cancel</button>
-                      <p>Shakib Al Hasan, born on March 24, 1987, stands as a cricketing luminary renowned for his exceptional all-round skills and strategic acumen. At 5 feet 9 inches, Shakib's batting finesse and bowling prowess have earned him admiration globally. With his ability to turn matches single-handedly, he remains a pivotal figure in Bangladesh cricket, inspiring fans with his consistency and determination.</p>
-                      </div>
-                  </div>
-                  </div>
-            
-                    
+          </div>               
 </section>
-<div id="blurdiv"></div>
-  <div id="cursor"></div>
-  <script src="main.js"></script>
-<script>
+
+<!-- first grid modal -->
+<div class="modal-section" id="firstmodal">
+  <div id="blurbg">
+  </div>
+  <div class="modal-outer">
+    <div class="modal-img">
+      <img src="./asset/virat.jpg" alt="Virat Kohli" height="450" width="280">
+    </div>
+    <div class="modal-content">
+      <h2>
+        Virat Kohli
+      </h2>
+      <p>
+        Virat Kohli, born on November 5, 1988, is a cricketing maestro celebrated for his unwavering dedication, remarkable batting prowess, and astute leadership. Standing tall at 5 feet 9 inches, Kohli has clinched numerous accolades, including ICC awards and Indian Premier League titles. Beyond cricket, he champions social causes, embodying resilience and excellence both on and off the pitch.
+      </p>
+      <button class="view-less">
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>
+ <!-- second grid modal -->
+ <div class="modal-section" id="secondmodal">
+  <div id="blurbg">
+  </div>
+  <div class="modal-outer">
+    <div class="modal-img">
+      <img src="./asset/ben-stokes.jpg" alt="Ben Stokes" height="450" width="280">
+    </div>
+    <div class="modal-content">
+      <h2>
+        Ben Stokes
+      </h2>
+      <p>
+        Born on June 4, 1991, Ben Stokes epitomizes cricketing brilliance with his explosive batting, dynamic bowling, and agile fielding. Standing tall at 6 feet 1 inch, Stokes boasts a string of memorable performances, including his heroic feats in critical matches. His indomitable spirit and versatility make him a game-changer, inspiring fans worldwide with his passion and resilience.
+      </p>
+      <button class="view-less">
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>
+ <!-- third grid modal -->
+ <div class="modal-section" id="thirdmodal">
+  <div id="blurbg">
+  </div>
+  <div class="modal-outer">
+    <div class="modal-img">
+      <img src="./asset/ab de.jpg" alt="Lebron James" height="450" width="280">
+    </div>
+    <div class="modal-content">
+      <h2>
+        AB DE Villiers
+      </h2>
+      <p>
+        AB De Villiers, born on February 17, 1984, is a cricketing phenomenon known for his innovative batting, unparalleled agility, and unmatched versatility. Standing at 6 feet tall, de Villiers has mesmerized audiences with his audacious strokeplay and ability to dominate any bowling attack. His impact transcends the cricket field, as he continues to inspire with his sportsmanship and dedication to humanitarian causes.</p>
+      <button class="view-less">
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>
+ <!-- fourth grid modal -->
+ <div class="modal-section" id="fourthmodal">
+  <div id="blurbg">
+  </div>
+  <div class="modal-outer">
+    <div class="modal-img">
+      <img src="./asset/shakib.jpg" alt="Shakib Al Hassan" height="450" width="280">
+    </div>
+    <div class="modal-content">
+      <h2>
+        Shakib Al Hassan
+      </h2>
+       <p>Shakib Al Hasan, born on March 24, 1987, stands as a cricketing luminary renowned for his exceptional all-round skills and strategic acumen. At 5 feet 9 inches, Shakib's batting finesse and bowling prowess have earned him admiration globally. With his ability to turn matches single-handedly, he remains a pivotal figure in Bangladesh cricket, inspiring fans with his consistency and determination.</p>
+      <button class="view-less">
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>
 
 
 
-  // navbar
-  window.addEventListener('scroll',() => {
-          const verticalScrollpx = window.scrollY || window.pageYOffset;
-          const navbar = document.getElementById('nav')
-          if(verticalScrollpx <400){
-              navbar.style.backgroundColor = "";
-              navbar.style.backdropFilter = "none";
-              navbar.style.border = "none";
-              navbar.style.opacity="1";            
+
+
+
+
+
+
+
+
+  <!-- navbar jquery start -->
+  <script>
+    $(document).ready(
+      function () {
+        $('.menu').click(
+          function () {
+            $('.respnav').animate(
+              {
+                "right": "0%",
   
+              }
+            );
+            $('body').css('overflow', 'hidden');
           }
-          else if(verticalScrollpx >400){
-              navbar.style.backgroundColor = "black";
-              navbar.style.opacity="0.8";            
-              navbar.style.boxShadow="none";
-              navbar.style.backdropFilter = "blur( 20px )";
-              navbar.style.borderRadius= "10px";
-              navbar.style.border = "1px solid rgba( 255, 255, 255, 0.18 )";
-              
+        );
+        $(".cross").click(
+          function () {
+            $('.respnav').animate(
+              {
+                "right": "-100%",
+  
+              }
+            );
+            $('body').css('overflow', 'visible');
           }
+        )
+        $("#aboutli").click(
+          function () {
+            $('.respnav').animate(
+              {
+                "right": "-100%",
+  
+              }, 1000
+            )
+          }
+        );
+        $("#contactli").click(
+          function () {
+            $('.respnav').animate(
+              {
+                "right": "-100%",
+  
+              }, 1000
+            )
+          }
+        );
+        // grid view more view less btn
+        $('.view-more').click(function () {
+          $('#more-grids').show()
+          $(this).hide()
+        })
+        $('.view-less').click(function () {
+          $('#more-grids').hide()
+          $('.view-more').show()
+        })
+      }
+    );
+  
+  
+  </script>
+  <!-- modal jquery -->
+  <script>
+    $(document).ready(function () {
+      // first modal
+      $("#frstmodalbtn").click(function () {
+        $("#firstmodal").animate({
+          'top': '7%'
+        });
+        $("#blurbg").animate({
+          'top': '0%'
+        });
+        $('body').css('overflow', 'hidden');
       });
-  // navbar
-  
-  $(document).ready(function(){
-      $(document).mousemove(function(e){
-          $('#cursor').offset({
-               top:e.pageY,
-               left:e.pageX+5
-          })
-      })
-      $('#outerham').click(function () {
-        $('#resp').slideToggle()
-        $('.rotate').toggleClass('hamrotate')
-        $('.innerham-inv').slideToggle()
-      }),
-       // modal 1
-  $('#learnmore-lebron').click(function(){
-    $('#outermodal1').show()
-    $('#outermodal1').animate({
-      'top':'7%'
-    })
-    $('#blurdiv').show()
-    $('body').css('overflow', 'hidden');
-  })
-    $('.view-less').click(function(){
-      $('#outermodal1').hide()
-    $('#outermodal1').animate({
-      'top':'-200%'
-    })
-    $('#blurdiv').hide()
-    $('body').css('overflow', 'visible');
-    })
+      // second modal
+      $("#scndmodalbtn").click(function () {
+        $("#secondmodal").animate({
+          'top': '7%'
+        });
+        $("#blurbg").animate({
+          'top': '0%'
+        });
+        $('body').css('overflow', 'hidden');
+      });
+      // third modal
+      $("#thirdmodalbtn").click(function () {
+        $("#thirdmodal").animate({
+          'top': '7%'
+        });
+        $("#blurbg").animate({
+          'top': '0%'
+        });
+        $('body').css('overflow', 'hidden');
+      });
 
-//  modal 2
-$('#learnmore-kevin').click(function(){
-    $('#outermodal2').show()
-    $('#outermodal2').animate({
-      'top':'7%'
-    })
-    $('#blurdiv').show()
-    $('body').css('overflow', 'hidden');
-  })
-    $('.view-less'||'.outermodal').click(function(){
-      $('#outermodal2').hide()
-    $('#outermodal2').animate({
-      'top':'-200%'
-    })
-    $('#blurdiv').hide()
-    $('body').css('overflow', 'visible');
-    })
-// modal 3
-    $('#learnmore-stephen').click(function(){
-    $('#outermodal3').show()
-    $('#outermodal3').animate({
-      'top':'7%'
-    })
-    $('#blurdiv').show()
-    $('body').css('overflow', 'hidden');
-  })
-    $('.view-less').click(function(){
-      $('#outermodal3').hide()
-    $('#outermodal3').animate({
-      'top':'-200%'
-    })
-    $('#blurdiv').hide()
-    $('body').css('overflow', 'visible');
-    })
-// modal 4
-    $('#learnmore-kawhi').click(function(){
-    $('#outermodal4').show()
-    $('#outermodal4').animate({
-      'top':'7%'
-    })
-    $('#blurdiv').show()
-    $('body').css('overflow', 'hidden');
-  })
-    $('.view-less').click(function(){
-      $('#outermodal4').hide()
-    $('#outermodal4').animate({
-      'top':'-200%'
-    })
-    $('#blurdiv').hide()
-    $('body').css('overflow', 'visible');
-    })
-})
-</script>
+        // fourth modal
+      $("#fourthmodalbtn").click(function () {
+        $("#fourthmodal").animate({
+          'top': '7%'
+        });
+        $("#blurbg").animate({
+          'top': '0%'
+        });
+        $('body').css('overflow', 'hidden');fourthmodalbtn
+      });
+
+
+
+
+
+
+      // view less
+      $('.view-less').click(
+        function () {
+          $(".modal-section").animate(
+            {
+              'top': '-500%'
+            }
+          );
+          $("#blurbg").animate({
+            'top': '-500%'
+          });
+          $('body').css('overflow', 'visible');
+        }
+      )
+    });
+
+  </script>
+
+
 </body>
 </html> 

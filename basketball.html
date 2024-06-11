@@ -24,6 +24,7 @@
 
 <body data-bs-theme="dark">
   <section id="first">
+    <!-- webnav start -->
     <nav class=" webnav">
       <a href="./index.html" class="logo">
         <img src="./asset/Sportsinfo 12-01 (1).png" id="logo" height="80px" width="auto" alt="logo">
@@ -48,17 +49,19 @@
             <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
           </ul>
         </li>
-        <li><a href="#aboutus">About Us</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="./index.html">About Us</a></li>
+        <li><a href="./index.html">Contact Us</a></li>
       </ul>
     </nav>
+     <!-- hero-detail -->
     <div id="detail">
       <div>
         <h1
           style="margin: 0% auto; text-align:center; margin-bottom: 1.5em;font-size: 3rem; color: #ff9800; font-style: italic; font-weight: bold;">
-          Basket-Ball</h1>
+          Basket-Ball
+        </h1>
       </div>
-      <ul>
+      <ul style="padding: 0% 2%;">
         <li>
           <h2 class="h2-responsive"> A Dynamic Team Sport</h2>
         </li>
@@ -81,8 +84,6 @@
           attract attention and showcase the sport's universal appeal. With its emphasis on athleticism, skill, and
           teamwork, basketball stands as one of the most popular and widely enjoyed sports globally.</p>
       </ul>
-    </div>
-    </div>
     </div>
     <div id="overlay"></div>
   </section>
@@ -113,8 +114,8 @@
           <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
         </ul>
       </li>
-      <li><a href="#aboutus">About Us</a></li>
-      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="./index.html" id="aboutli">About Us</a></li>
+      <li><a href="./index.html" id="contactli">Contact Us</a></li>
     </ul>
   </div>
 
@@ -207,7 +208,7 @@
       </div>
     </div>
 
-    </div>
+    <!-- top playes start -->
     <div id="top-player"
       style="width: 100%; align-items: center; margin: 0% auto; align-content: center; height: fit-content; display: flex; flex-direction: column; justify-content: center; text-align: center;">
       <h2 style="font-style: italic; font-weight: bold; color: #ff9800;">Top Players</h2>
@@ -308,7 +309,7 @@
     </div>
     <div class="modal-outer">
       <div class="modal-img">
-        <img src="./asset/project-290-P9xpYfUpoZI-unsplash.jpg" alt="Lin Dan" height="400" width="270">
+        <img src="./asset/project-290-P9xpYfUpoZI-unsplash.jpg" alt="Lebron James" height="450" width="280">
       </div>
       <div class="modal-content">
         <h2>
@@ -332,10 +333,10 @@
     </div>
     <div class="modal-outer">
       <div class="modal-img">
-        <img src="./asset/bruno-aguirre-tXJuW9htxhE-unsplash.jpg" alt="Lin Dan" height="400" width="270">
+        <img src="./asset/bruno-aguirre-tXJuW9htxhE-unsplash.jpg" alt="Kevin Durant"height="450" width="280">
       </div>
       <div class="modal-content">
-        <h2 style="font-size: 2rem; margin: 0%;">
+        <h2>
           Kevin Durant
         </h2>
         <p>
@@ -358,10 +359,10 @@
       </div>
       <div class="modal-outer">
         <div class="modal-img">
-          <img src="./asset/alec-moore-rbANExeyApc-unsplash.jpg" alt="Lin Dan" height="400" width="270">
+          <img src="./asset/alec-moore-rbANExeyApc-unsplash.jpg" alt=" Stephen Curry" height="450" width="280">
         </div>
         <div class="modal-content">
-          <h2 style="font-size: 2.5rem;">
+          <h2>
             Stephen Curry
           </h2>
           <p>
@@ -385,10 +386,10 @@
     <div class="modal-outer">
       <div class="modal-img">
         <img src="./asset/max-winkler-UFIZodJgScQ-unsplash.jpg
-        " alt="Lin Dan" height="400" width="270">
+        " alt="Kawhi Leonard" height="450" width="280">
       </div>
       <div class="modal-content">
-        <h2 style="font-size: 2.5rem;">
+        <h2>
           Kawhi Leonard
         </h2>
          <p>
@@ -421,12 +422,7 @@
 
             }
           );
-          $('.respnav').animate(
-            {
-              "right": "0%",
-
-            }
-          );
+          $('body').css('overflow', 'hidden');
         }
       );
       $(".cross").click(
@@ -436,8 +432,8 @@
               "right": "-100%",
 
             }
-          )
-
+          );
+          $('body').css('overflow', 'visible');
         }
       )
       $("#aboutli").click(
@@ -446,37 +442,7 @@
             {
               "right": "-100%",
 
-            }, 800
-          )
-        }
-      );
-      $("#servicesli").click(
-        function () {
-          $('.respnav').animate(
-            {
-              "right": "-100%",
-
-            }, 800
-          )
-        }
-      );
-      $("#skillli").click(
-        function () {
-          $('.respnav').animate(
-            {
-              "right": "-100%",
-
-            }, 800
-          )
-        }
-      );
-      $("#projectli").click(
-        function () {
-          $('.respnav').animate(
-            {
-              "right": "-100%",
-
-            }, 800
+            }, 1000
           )
         }
       );
@@ -486,7 +452,7 @@
             {
               "right": "-100%",
 
-            }, 800
+            }, 1000
           )
         }
       );

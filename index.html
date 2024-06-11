@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Info | Top Players</title>
-  <link rel="shortcut icon" href="./asset/Sportsinfo 1-01 (1).png" type="image/x-icon">
+    <link rel="shortcut icon" href="./asset/Sportsinfo 1-01 (1).png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <!-- j-query -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -90,8 +90,8 @@
                     <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
                 </ul>
             </li>
-            <li><a href="#aboutus">About Us</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#aboutus" id="aboutli">About Us</a></li>
+            <li><a href="#contact" id="contactli">Contact Us</a></li>
         </ul>
     </div>
 
@@ -102,7 +102,8 @@
             SPORTS
         </h2>
         <div class="search-bar">
-            <input type="search"class="form-control" id="search-item" oninput="search()"  placeholder="Search Info Of Sports">
+            <input type="search" class="form-control" id="search-item" oninput="search()"
+                placeholder="Search Info Of Sports">
         </div>
 
         <div class="container text-center" id="product">
@@ -336,134 +337,146 @@
 
     </section>
 
-      <!-- about us section-->
-  <section id="aboutus">
-    <h2 style="text-align: center; font-size: 3rem; font-weight: bold;">
-      <Span style="color: #ff9800; margin-right: 0.2em;">About</Span><span style="color: #e7e7e7;">Us</span>
-    </h2>
-    <div class="aboutouter d-lg-flex justify-content-lg-evenly align-items-lg-center mt-5">
-      <div class="aboutcontent">
-        <h2 style="color: #e7e7e7;">
-          Introduction
+    <!-- about us section-->
+    <section id="aboutus">
+        <h2 style="text-align: center; font-size: 3rem; font-weight: bold;">
+            <Span style="color: #ff9800; margin-right: 0.2em;">About</Span><span style="color: #e7e7e7;">Us</span>
         </h2>
-        <p style=" color: #e7e7e7;">
-          Welcome to SportsInfo.com, your premier destination for all things sports-related. At SportsInfo, we believe
-          in the power of sports to inspire, unite, and entertain people around the world. Whether you're a passionate
-          fan, a casual observer, or someone looking to explore the world of sports, you've come to the right place. Our
-          platform is designed to provide you with comprehensive information, engaging content, and an immersive
-          experience that celebrates the excitement and diversity of sports.
-        </p>
-      </div>
-      <div class="aboutimg">
-        <img src="./asset/about1.jpg" class="intro img-fluid" alt="aboutimg" height="300px"
-          width="400px">
-      </div>
-    </div>
-    <div class="aboutouter d-lg-flex justify-content-lg-evenly align-items-lg-center mt-5">
-      <div class="aboutcontent">
-        <h2>
-          <span style="color: #ff9800;">SportsInfo</span>
-          <Span style="color: #e7e7e7;">Overview</Span>
-        </h2>
-        <p style="color: #e7e7e7;">
-          SportsInfo.com is a flagship project of Infocom, a multinational company dedicated to building informative
-          websites across various domains. Launched with the vision of becoming the ultimate hub for sports enthusiasts,
-          SportsInfo offers a wide range of features and services tailored to meet the needs of users from all
-          backgrounds. From football to tennis, judo to volleyball, and everything in between, SportsInfo covers a
-          diverse array of sports, providing users with access to in-depth information, news, statistics, player
-          profiles, and much more.
-        </p>
-      </div>
-      <div class="aboutimg">
-        <img src="./asset/g1.jpg" class="intro img-fluid" alt="aboutimg" height="300px"
-          width="400px">
-      </div>
+        <div class="aboutouter d-lg-flex justify-content-lg-evenly align-items-lg-center mt-5">
+            <div class="aboutcontent">
+                <h2 style="color: #e7e7e7;">
+                    Introduction
+                </h2>
+                <p style=" color: #e7e7e7;">
+                    Welcome to SportsInfo.com, your premier destination for all things sports-related. At SportsInfo, we
+                    believe
+                    in the power of sports to inspire, unite, and entertain people around the world. Whether you're a
+                    passionate
+                    fan, a casual observer, or someone looking to explore the world of sports, you've come to the right
+                    place. Our
+                    platform is designed to provide you with comprehensive information, engaging content, and an
+                    immersive
+                    experience that celebrates the excitement and diversity of sports.
+                </p>
+            </div>
+            <div class="aboutimg">
+                <img src="./asset/about1.jpg" class="intro img-fluid" alt="aboutimg" height="300px" width="400px">
+            </div>
+        </div>
+        <div class="aboutouter d-lg-flex justify-content-lg-evenly align-items-lg-center mt-5">
+            <div class="aboutcontent">
+                <h2>
+                    <span style="color: #ff9800;">SportsInfo</span>
+                    <Span style="color: #e7e7e7;">Overview</Span>
+                </h2>
+                <p style="color: #e7e7e7;">
+                    SportsInfo.com is a flagship project of Infocom, a multinational company dedicated to building
+                    informative
+                    websites across various domains. Launched with the vision of becoming the ultimate hub for sports
+                    enthusiasts,
+                    SportsInfo offers a wide range of features and services tailored to meet the needs of users from all
+                    backgrounds. From football to tennis, judo to volleyball, and everything in between, SportsInfo
+                    covers a
+                    diverse array of sports, providing users with access to in-depth information, news, statistics,
+                    player
+                    profiles, and much more.
+                </p>
+            </div>
+            <div class="aboutimg">
+                <img src="./asset/g1.jpg" class="intro img-fluid" alt="aboutimg" height="300px" width="400px">
+            </div>
 
-    </div>
-    <div class="aboutouter d-lg-flex justify-content-lg-evenly align-items-lg-center mt-5 mb-4">
-      <div class="aboutcontent">
-        <h2>
-          <span style="color: #ff9800; ">Our</span>
-          <Span style="color: #e7e7e7;">Mission</Span>
-        </h2>
-        <p style=" color: #e7e7e7;">
-          At SportsInfo, our mission is simple: to empower sports enthusiasts with the knowledge and resources they need
-          to fully immerse themselves in the world of sports. We are committed to providing a platform that fosters
-          community engagement, encourages exploration, and celebrates the passion and dedication of athletes and fans
-          alike. Whether you're seeking the latest updates on your favorite team, exploring new sports and disciplines,
-          or diving deep into the history and culture of sports, SportsInfo is here to support your journey every step
-          of the way. Join us as we strive to make SportsInfo.com the ultimate destination for sports lovers worldwide.
-        </p>
-      </div>
-      <div class="aboutimg">
-        <img src="./asset/about3.jpg" class="intro img-fluid" alt="aboutimg" height="300px" width="400px">
-      </div>
-    </div>
-    </div>
-  </section>
+        </div>
+        <div class="aboutouter d-lg-flex justify-content-lg-evenly align-items-lg-center mt-5 mb-4">
+            <div class="aboutcontent">
+                <h2>
+                    <span style="color: #ff9800; ">Our</span>
+                    <Span style="color: #e7e7e7;">Mission</Span>
+                </h2>
+                <p style=" color: #e7e7e7;">
+                    At SportsInfo, our mission is simple: to empower sports enthusiasts with the knowledge and resources
+                    they need
+                    to fully immerse themselves in the world of sports. We are committed to providing a platform that
+                    fosters
+                    community engagement, encourages exploration, and celebrates the passion and dedication of athletes
+                    and fans
+                    alike. Whether you're seeking the latest updates on your favorite team, exploring new sports and
+                    disciplines,
+                    or diving deep into the history and culture of sports, SportsInfo is here to support your journey
+                    every step
+                    of the way. Join us as we strive to make SportsInfo.com the ultimate destination for sports lovers
+                    worldwide.
+                </p>
+            </div>
+            <div class="aboutimg">
+                <img src="./asset/about3.jpg" class="intro img-fluid" alt="aboutimg" height="300px" width="400px">
+            </div>
+        </div>
+        </div>
+    </section>
 
-  <!-- contact us section -->
-  <section id="contact">
-    <h2>CONTACT US</h2>
+    <!-- contact us section -->
+    <section id="contact">
+        <h2>CONTACT US</h2>
 
-    <form action="https://formsubmit.co/zaighamhaider8@gmail.com" method="POST">
-      <!-- <label for="name"></label> -->
-      <input type="text" name="Name" required placeholder="Enter Your Name...">
-      <!-- <label for="email"></label> -->
-      <input type="email" name="Email" required placeholder="Enter Your Email Address...">
-      <!-- <label for="email"></label> -->
-      <textarea name="Message" placeholder="Enter Your Email Message..."></textarea>
-      <button type="submit" class="more mt-2">Send</button>
-    </form>
-  </section>
+        <form action="https://formsubmit.co/zaighamhaider8@gmail.com" method="POST">
+            <!-- <label for="name"></label> -->
+            <input type="text" name="Name" required placeholder="Enter Your Name...">
+            <!-- <label for="email"></label> -->
+            <input type="email" name="Email" required placeholder="Enter Your Email Address...">
+            <!-- <label for="email"></label> -->
+            <textarea name="Message" placeholder="Enter Your Email Message..."></textarea>
+            <button type="submit" class="more mt-2">Send</button>
+        </form>
+    </section>
 
 
-  <!-- footer section -->
-  <footer>
-    <table>
-      <tr>
-        <a href="badminton.html">
-          <th>Badminton</th>
-        </a>
-        <a href="basketball.html">
-          <th>Basket Ball </th>
-        </a>
-        <a href="chess.html">
-          <th>Chess</th>
-        </a>
-      </tr>
-      <tr>
-        <a href="cricket.html">
-          <th>Cricket</th>
-        </a>
-        <a href="football.html">
-          <th>FootBall </th>
-        </a>
-        <a href="golf.html">
-          <th>Golf</th>
-        </a>
-      </tr>
-      <tr>
-        <a href="hockey.html">
-          <th>Hockey</th>
-        </a>
-        <a href="motercycle.html">
-          <th>Motorcycle Racing </th>
-        </a>
-        <a href="swimming.html">
-          <th>Swimming</th>
-        </a>
-      </tr>
-      <tr>
-        <a href="tennis.html">
-          <th>Tennis</th>
-        </a>
-        <a href="vollyball.html">
-          <th>Volley Ball </th>
-        </a>
-      </tr>
-    </table>
-  </footer>
+    <!-- footer section -->
+    <footer>
+        <table>
+            <tr>
+                <a href="badminton.html">
+                    <th>Badminton</th>
+                </a>
+                <a href="basketball.html">
+                    <th>Basket Ball </th>
+                </a>
+                <a href="chess.html">
+                    <th>Chess</th>
+                </a>
+            </tr>
+            <tr>
+                <a href="cricket.html">
+                    <th>Cricket</th>
+                </a>
+                <a href="football.html">
+                    <th>FootBall </th>
+                </a>
+                <a href="golf.html">
+                    <th>Golf</th>
+                </a>
+            </tr>
+            <tr>
+                <a href="hockey.html">
+                    <th>Hockey</th>
+                </a>
+                <a href="motercycle.html">
+                    <th>Motorcycle Racing </th>
+                </a>
+                <a href="swimming.html">
+                    <th>Swimming</th>
+                </a>
+            </tr>
+            <tr>
+                <a href="tennis.html">
+                    <th>Tennis</th>
+                </a>
+                <a href="vollyball.html">
+                    <th>Volley Ball </th>
+                </a>
+            </tr>
+        </table>
+    </footer>
 
 
 
@@ -492,12 +505,8 @@
 
                             }
                         );
-                        $('.respnav').animate(
-                            {
-                                "right": "0%",
+                        $('body').css('overflow', 'hidden');
 
-                            }
-                        );
                     }
                 );
                 $(".cross").click(
@@ -507,8 +516,8 @@
                                 "right": "-100%",
 
                             }
-                        )
-
+                        );
+                        $('body').css('overflow', 'visible');
                     }
                 )
                 $("#aboutli").click(
@@ -517,38 +526,10 @@
                             {
                                 "right": "-100%",
 
-                            }, 800
-                        )
-                    }
-                );
-                $("#servicesli").click(
-                    function () {
-                        $('.respnav').animate(
-                            {
-                                "right": "-100%",
+                            }, 1000
+                        );
+                        $('body').css('overflow', 'visible');
 
-                            }, 800
-                        )
-                    }
-                );
-                $("#skillli").click(
-                    function () {
-                        $('.respnav').animate(
-                            {
-                                "right": "-100%",
-
-                            }, 800
-                        )
-                    }
-                );
-                $("#projectli").click(
-                    function () {
-                        $('.respnav').animate(
-                            {
-                                "right": "-100%",
-
-                            }, 800
-                        )
                     }
                 );
                 $("#contactli").click(
@@ -557,8 +538,9 @@
                             {
                                 "right": "-100%",
 
-                            }, 800
-                        )
+                            }, 1000
+                        );
+                        $('body').css('overflow', 'visible');
                     }
                 );
                 // grid view more view less btn

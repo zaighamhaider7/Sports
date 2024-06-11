@@ -27,6 +27,7 @@
 <body data-bs-theme="dark" id="body" class="bg-dark">
   <!-- hero section -->
   <section id="first">
+    <!-- webnav start -->
     <nav class=" webnav">
       <a href="./index.html" class="logo">
         <img src="./asset/Sportsinfo 12-01 (1).png" id="logo" height="80px" width="auto" alt="logo">
@@ -51,12 +52,13 @@
             <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
           </ul>
         </li>
-        <li><a href="#aboutus">About Us</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="./index.html">About Us</a></li>
+        <li><a href="./index.html">Contact Us</a></li>
       </ul>
     </nav>
+    <!-- hero-detail -->
     <div id="detail">
-      <div id="heading">
+      <div>
         <h1
           style="margin: 0% auto; text-align:center; margin-bottom: 0.5em;font-size: 4rem; color: #ff9800; font-style: italic; font-weight: bold;">
           Badminton
@@ -88,9 +90,9 @@
           opportunities for players to showcase their skills on the global stage.</p>
       </ul>
     </div>
-    </div>
     <div id="overlay"></div>
   </section>
+
   <!-- responsive nav start -->
   <div class="respnav" id="resp-nav">
     <div class="resp-head">
@@ -117,8 +119,8 @@
           <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
         </ul>
       </li>
-      <li><a href="#aboutus">About Us</a></li>
-      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="./index.html" id="aboutli">About Us</a></li>
+      <li><a href="./index.html" id="contactli">Contact Us</a></li>
     </ul>
   </div>
 
@@ -214,6 +216,7 @@
       </div>
     </div>
     </div>
+    <!-- top players -->
     <div id="top-player"
       style="width: 100%; align-items: center; margin: 0% auto; align-content: center; height: fit-content; display: flex; flex-direction: column; justify-content: center; text-align: center;">
       <h2 style="font-style: italic; font-weight: bold; color: #ff9800;">Top Players</h2>
@@ -310,7 +313,7 @@
     </div>
     <div class="modal-outer">
       <div class="modal-img">
-        <img src="./asset/first badminton.jpg" alt="Lin Dan" height="400" width="270">
+        <img src="./asset/first badminton.jpg" alt="Lin Dan" height="450" width="280">
       </div>
       <div class="modal-content">
         <h2>
@@ -337,10 +340,10 @@
     </div>
     <div class="modal-outer">
       <div class="modal-img">
-        <img src="./asset/second badminton.jpg" alt="Lin Dan" height="400" width="270">
+        <img src="./asset/second badminton.jpg" alt="Lee Chong Wei" height="450" width="280">
       </div>
       <div class="modal-content">
-        <h2 style="font-size: 2.5rem;">
+        <h2>
           Lee Chong Wei
         </h2>
         <p>
@@ -363,10 +366,10 @@
     </div>
     <div class="modal-outer">
       <div class="modal-img">
-        <img src="./asset/third badminton.jpg" alt="Lin Dan" height="400" width="270">
+        <img src="./asset/third badminton.jpg" alt="Carolina Marin" height="450" width="280">
       </div>
       <div class="modal-content">
-        <h2 style="font-size: 2.5rem;">
+        <h2>
           Carolina Marin
         </h2>
         <p>
@@ -387,10 +390,10 @@
     </div>
     <div class="modal-outer">
       <div class="modal-img">
-        <img src="./asset/fourth badminton.jpg" alt="Lin Dan" height="400" width="270">
+        <img src="./asset/fourth badminton.jpg" alt="Tai Tzu Ying" height="450" width="280">
       </div>
       <div class="modal-content">
-        <h2 style="font-size: 2.5rem;">
+        <h2>
           Tai Tzu Ying
         </h2>
          <p>Tai Tzu Ying, representing Chinese Taipei, is revered for her exceptional skill, creativity, and finesse on
@@ -417,15 +420,10 @@
             $('.respnav').animate(
               {
                 "right": "0%",
-
+  
               }
             );
-            $('.respnav').animate(
-              {
-                "right": "0%",
-
-              }
-            );
+            $('body').css('overflow', 'hidden');
           }
         );
         $(".cross").click(
@@ -433,10 +431,10 @@
             $('.respnav').animate(
               {
                 "right": "-100%",
-
+  
               }
-            )
-
+            );
+            $('body').css('overflow', 'visible');
           }
         )
         $("#aboutli").click(
@@ -444,38 +442,8 @@
             $('.respnav').animate(
               {
                 "right": "-100%",
-
-              }, 800
-            )
-          }
-        );
-        $("#servicesli").click(
-          function () {
-            $('.respnav').animate(
-              {
-                "right": "-100%",
-
-              }, 800
-            )
-          }
-        );
-        $("#skillli").click(
-          function () {
-            $('.respnav').animate(
-              {
-                "right": "-100%",
-
-              }, 800
-            )
-          }
-        );
-        $("#projectli").click(
-          function () {
-            $('.respnav').animate(
-              {
-                "right": "-100%",
-
-              }, 800
+  
+              }, 1000
             )
           }
         );
@@ -484,8 +452,8 @@
             $('.respnav').animate(
               {
                 "right": "-100%",
-
-              }, 800
+  
+              }, 1000
             )
           }
         );
@@ -500,14 +468,9 @@
         })
       }
     );
-
-
+  
+  
   </script>
-
-
-
-
-
   <!-- modal jquery -->
   <script>
     $(document).ready(function () {
