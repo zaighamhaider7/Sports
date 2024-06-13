@@ -87,8 +87,8 @@
               <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
             </ul>
           </li>
-          <li><a href="./index.html" id="aboutli">About Us</a></li>
-          <li><a href="./index.html" id="contactli">Contact Us</a></li>
+          <li><a href="#aboutus" id="aboutli">About Us</a></li>
+          <li><a href="#contact" id="contactli">Contact Us</a></li>
         </ul>
       </div>
 
@@ -521,7 +521,8 @@
                 "right": "-100%",
   
               }, 1000
-            )
+            );
+            $('body').css('overflow', 'visible');
           }
         );
         $("#contactli").click(
@@ -531,7 +532,8 @@
                 "right": "-100%",
   
               }, 1000
-            )
+            );
+            $('body').css('overflow', 'visible');
           }
         );
         // grid view more view less btn

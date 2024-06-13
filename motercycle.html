@@ -49,8 +49,8 @@
         <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
       </ul>
     </li>
-    <li><a href="./index.html">About Us</a></li>
-    <li><a href="./index.html">Contact Us</a></li>
+    <li><a href="#second">About</a></li>
+    <li><a href="#top-player">Top Riders</a></li>
   </ul>
 </nav>
       <!-- hero-detail -->
@@ -105,12 +105,13 @@
         <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
       </ul>
     </li>
-    <li><a href="./index.html" id="aboutli">About Us</a></li>
-    <li><a href="./index.html" id="contactli">Contact Us</a></li>
+    <li><a href="#second" id="aboutli">About</a></li>
+    <li><a href="#top-player" id="contactli">Top Riders</a></li>
   </ul>
 </div>
 
 <section id="second">
+  <h2 style="font-style: italic; font-weight: bold; color: #ff9800; margin-bottom: 0%;">About Motorcycle</h2>
          <div id="acordianouter">
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -377,7 +378,8 @@
                   "right": "-100%",
     
                 }, 1000
-              )
+              );
+              $('body').css('overflow', 'visible');
             }
           );
           $("#contactli").click(
@@ -387,7 +389,8 @@
                   "right": "-100%",
     
                 }, 1000
-              )
+              );
+              $('body').css('overflow', 'visible');
             }
           );
           // grid view more view less btn
